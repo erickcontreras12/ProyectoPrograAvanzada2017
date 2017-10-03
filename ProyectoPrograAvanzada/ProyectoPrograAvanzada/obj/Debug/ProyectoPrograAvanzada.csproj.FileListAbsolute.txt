@@ -1,1 +1,2 @@
 C:\Users\Erick Contreras\Desktop\URL\Segundo Ciclo\Progra\Proyecto_PrograAvanzadaCII2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe.config
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe.config
