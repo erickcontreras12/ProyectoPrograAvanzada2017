@@ -13,6 +13,7 @@ namespace PruebasConsolsa
         private int idGrupo;
         private Usuario[] data;
         private int tamanio = 0;
+        private int inicial = 0;
         private bool parlamentario;
 
         public GrupoUsuarios()
