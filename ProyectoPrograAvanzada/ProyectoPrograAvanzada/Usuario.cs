@@ -10,13 +10,22 @@ namespace PruebasConsolsa
     {
         private String puesto;
         private String nombre;
-        private String idUsuario;
+        private int idUsuario;
 
-        public Usuario(String n, String p, String id)
+        public Usuario(String n, String p, int id)
         {
             puesto = p;
             nombre= n;
             idUsuario = id;    
+        }
+
+        public void setNombre(String n)
+        {
+            nombre = n;
+        }
+        public int getIDUsuario()
+        {
+            return idUsuario;
         }
 
         public String getPuesto()
@@ -24,10 +33,11 @@ namespace PruebasConsolsa
             return puesto;
         }
 
-        public void setPuesto()
+        public void setPuesto(String p)
         {
-            puesto = "asesor";
+            puesto = p;
         }
+
 
         public String toString()
         {
