@@ -8,3 +8,6 @@ C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograA
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.csproj.GenerateResource.Cache
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.exe
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.pdb
+C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe.config
+C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.exe
+C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.pdb
