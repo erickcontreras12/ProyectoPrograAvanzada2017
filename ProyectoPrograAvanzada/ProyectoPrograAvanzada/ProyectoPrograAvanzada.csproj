@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CGrupoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGrupoUsuario.Designer.cs">
+      <DependentUpon>CGrupoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cola.cs" />
     <Compile Include="Datos.cs">
       <SubType>Form</SubType>
@@ -71,6 +77,12 @@
     <Compile Include="SGrupoUsuario.Designer.cs">
       <DependentUpon>SGrupoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="SUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUsuarios.Designer.cs">
+      <DependentUpon>SUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -78,6 +90,9 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CGrupoUsuario.resx">
+      <DependentUpon>CGrupoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos.resx">
       <DependentUpon>Datos.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="SGrupoUsuario.resx">
       <DependentUpon>SGrupoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUsuarios.resx">
+      <DependentUpon>SUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
