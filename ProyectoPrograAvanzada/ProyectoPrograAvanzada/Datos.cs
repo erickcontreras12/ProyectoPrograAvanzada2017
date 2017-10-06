@@ -22,6 +22,9 @@ namespace ProyectoPrograAvanzada
             Usuarios vim4 = new Usuarios();
             vim4.Show();
             this.Hide();
+
+            
+
         }
 
         private void button4_Click(object sender, EventArgs e)

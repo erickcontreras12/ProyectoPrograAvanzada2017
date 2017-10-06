@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PruebasConsolsa
+namespace ProyectoPrograAvanzada
 {
     class Usuario
     {
@@ -21,8 +21,8 @@ namespace PruebasConsolsa
         public Usuario(String n, String p, int id)
         {
             puesto = p;
-            nombre= n;
-            idUsuario = id;    
+            nombre = n;
+            idUsuario = id;
         }
 
         /// <summary>
@@ -58,8 +58,8 @@ namespace PruebasConsolsa
         /// <returns>Datos del usuario</returns>
         public String toString()
         {
-            return "Usuario[ID: "+ idUsuario +"Nombre: "+nombre+" Puesto: "
-                + puesto +"]";
+            return "Usuario[ID: " + idUsuario + "Nombre: " + nombre + " Puesto: "
+                + puesto + "]";
         }
     }
 }

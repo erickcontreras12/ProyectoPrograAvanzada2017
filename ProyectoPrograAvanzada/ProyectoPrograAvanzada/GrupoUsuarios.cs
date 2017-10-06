@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PruebasConsolsa
+namespace ProyectoPrograAvanzada
 {
     class GrupoUsuarios
     {
-
         public static int CAPACITY = 9;
         private int idGrupo;
         private Usuario[] data;
@@ -51,7 +50,7 @@ namespace PruebasConsolsa
         /// <param name="i">id del usuario a cambiar</param>
         /// <param name="e">propiedades nuevas del usuario</param>
         /// <returns>usuario modificado</returns>
-        public Usuario set(int i,Usuario e)
+        public Usuario set(int i, Usuario e)
         {
             Usuario temp = null;
             for (int j = 0; j <= tamanio; j++)
@@ -60,7 +59,7 @@ namespace PruebasConsolsa
                 {
                     temp = data[j];
                     data[j] = e;
-                    
+
                 }
             }
             return temp;
@@ -136,5 +135,4 @@ namespace PruebasConsolsa
             return "";
         }
     }
-
 }
