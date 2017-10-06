@@ -10,25 +10,52 @@ namespace PruebasConsolsa
     {
         private String puesto;
         private String nombre;
-        private String idUsuario;
+        private int idUsuario;
 
-        public Usuario(String n, String p, String id)
+        /// <summary>
+        /// Método constructor de la clase usuario
+        /// </summary>
+        /// <param name="n">Nombre del usuario</param>
+        /// <param name="p">Puesto del usuario</param>
+        /// <param name="id">ID del usuario</param>
+        public Usuario(String n, String p, int id)
         {
             puesto = p;
             nombre= n;
             idUsuario = id;    
         }
 
+        /// <summary>
+        /// Método que devuelve el id del usuario
+        /// </summary>
+        /// <returns>id del usuario</returns>
+        public int getID()
+        {
+            return idUsuario;
+        }
+
+        /// <summary>
+        /// Método que devuelve el valor del puesto del usuario
+        /// </summary>
+        /// <returns>Puesto del usuario</returns>
         public String getPuesto()
         {
             return puesto;
         }
 
-        public void setPuesto()
+        /// <summary>
+        /// Método que define el puesto del usuario
+        /// </summary>
+        /// <param name="p">puesto del usuario</param>
+        public void setPuesto(String p)
         {
-            puesto = "asesor";
+            puesto = p;
         }
 
+        /// <summary>
+        /// Método que imprime todas las propiedades de la clase
+        /// </summary>
+        /// <returns>Datos del usuario</returns>
         public String toString()
         {
             return "Usuario[ID: "+ idUsuario +"Nombre: "+nombre+" Puesto: "

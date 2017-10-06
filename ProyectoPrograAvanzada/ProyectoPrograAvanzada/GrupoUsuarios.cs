@@ -16,52 +16,80 @@ namespace PruebasConsolsa
         private int inicial = 0;
         private bool parlamentario;
 
-        public GrupoUsuarios()
+        /// <summary>
+        /// Método constructor que define el tamaño del arreglo
+        /// y el ID del grupo de usuarios
+        /// </summary>
+        /// <param name="i">ID del grupo</param>
+        public GrupoUsuarios(int i)
         {
             data = new Usuario[CAPACITY];
+            idGrupo = i;
         }
 
+        /// <summary>
+        /// Método para ver el tamaño del arreglo
+        /// </summary>
+        /// <returns>Tamaño del arreglo</returns>
         public int size()
         {
             return tamanio;
         }
 
+        /// <summary>
+        /// Método que indica si el arreglo está vacío o no
+        /// </summary>
+        /// <returns>True si está vacío el arrelo</returns>
         public bool isEmpty()
         {
             return tamanio == 0;
         }
 
-        public Usuario get(int i)
+        /// <summary>
+        /// Método que modifica un usuario especifico
+        /// </summary>
+        /// <param name="i">id del usuario a cambiar</param>
+        /// <param name="e">propiedades nuevas del usuario</param>
+        /// <returns>usuario modificado</returns>
+        public Usuario set(int i,Usuario e)
         {
-            return data[i];
-        }
-
-        public Usuario set(int i, Usuario e)
-        {
-            Usuario temp = data[i];
-            data[i] = e;
+            Usuario temp = null;
+            for (int j = 0; j <= tamanio; j++)
+            {
+                if (data[j].getID() == i)
+                {
+                    temp = data[j];
+                    data[j] = e;
+                    
+                }
+            }
             return temp;
         }
 
-        public void add(int i, Usuario e)
+        /// <summary>
+        /// Método para agregar un nuevo usuario
+        /// </summary>
+        /// <param name="e">datos del nuevo usuario</param>
+        public void add(Usuario e)
         {
             if (validarPuesto(e))
             {
-                e.setPuesto();
+                e.setPuesto("asesor");
             }
 
             if (tamanio < data.Length)
             {
-
-                for (int k = tamanio - 1; k >= i; k--)
-                {
-                    data[k + 1] = data[k];
-                    data[i] = e;
-                }
+                data[tamanio] = e;
                 tamanio++;
             }
         }
 
+        /// <summary>
+        /// Método para validar el puesto del usuario (revisa para que solo
+        /// haya un parlamentario)
+        /// </summary>
+        /// <param name="e">datos usuario</param>
+        /// <returns></returns>
         public bool validarPuesto(Usuario e)
         {
             parlamentario = false;
@@ -76,26 +104,36 @@ namespace PruebasConsolsa
             return parlamentario;
         }
 
+        /// <summary>
+        /// Método para eliminar un usuario especifico
+        /// </summary>
+        /// <param name="i">id del usuario a eliminar</param>
+        /// <returns></returns>
         public Usuario remove(int i)
         {
-
-            Usuario temp = data[i];
-            for (int k = i; k < (tamanio - 1); k++)
+            Usuario temp = null;
+            for (int k = 0; k <= tamanio; k++)
             {
-                data[k] = data[k + 1];
-                data[tamanio - 1] = default(Usuario);
+                if (data[k].getID() == i)
+                {
+                    temp = data[k];
+                    data[k] = default(Usuario);
+                    tamanio--;
+                }
             }
-            tamanio--;
             return temp;
         }
 
-        public void mostrarUsuarios()
+        /// <summary>
+        /// Método que imprime todos los usuarios del arreglo
+        /// </summary>
+        public String mostrarUsuarios()
         {
-            for (int i = 0; i < data.Length; i++)
+            for (int i = 0; i <= tamanio; i++)
             {
-                Console.WriteLine(data[i].toString());
+                return data[i].toString();
             }
-            
+            return "";
         }
     }
 
