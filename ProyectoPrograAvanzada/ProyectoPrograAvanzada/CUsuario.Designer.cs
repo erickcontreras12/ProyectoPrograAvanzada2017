@@ -163,7 +163,7 @@
             // 
             // grupoUsuariosBindingSource
             // 
-            this.grupoUsuariosBindingSource.DataSource = typeof(PruebasConsolsa.GrupoUsuarios);
+            this.grupoUsuariosBindingSource.DataSource = typeof(ProyectoPrograAvanzada.GrupoUsuarios);
             // 
             // CUsuario
             // 
