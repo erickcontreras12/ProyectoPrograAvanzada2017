@@ -7,56 +7,65 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    class Pila : System.Collections.ArrayList
+    class Pila<T> : System.Collections.ArrayList
     {
-        Pila()
+        nodo<T> cima;
+        public Pila()
         {
+            cima = null;
         }
-            public void apilar(Object dato)
+
+        public bool pilaVacia()
         {
-            if (dato != null)
+            return (cima == null);
+        }
+
+        public void push(T dato)
+        {
+            nodo<T> nuevo = new nodo<T>(dato);
+            if (!pilaVacia())
             {
-                this.Add(dato);
+                nuevo.anterior = cima;
+                cima.siguiente = nuevo;
+            }
+            cima = nuevo;
+        }//push insertar
+
+
+        public T verCima()
+        {
+            T resultado = default(T);
+            if (!pilaVacia())
+                resultado = cima.dato;
+            return resultado;
+        }
+
+        public T pop()
+        {
+            T d;
+            if (cima.anterior == null)
+            {
+                d = cima.dato;
+                cima = null;
             }
             else
             {
-                MessageBox.Show("Introduzca un dato no nulo");
+                d = cima.dato;
+                cima = cima.anterior;
+                cima.siguiente.anterior = null;
+                cima.siguiente = null;
             }
+            return d;
+        }//pop eliminar
+
+        public void eliminarPila()
+        {
+            T aux;
+            while (!pilaVacia())
+                aux = pop();
         }
 
-        //se elimina el elemento frontal de la pila.(pop)
-        public void desapilar()
-        {
-            if (this.Count > 0)
-            {
-                this.Remove(this.Count - 1);
-            }
-        }
 
-        //devuelve el elemento que esta en la cima de la pila. (top o peek)
-        public Object cima()
-        {
-            Object datoAuxiliar = null;
-            if (this.Count > 0)
-            {
-                datoAuxiliar = this.Contains(this.Count - 1);
-            }
-            return datoAuxiliar;
-        }
 
-        //devuelve cierto si la pila está vacía o falso en caso contrario (empty).
-        public bool vacia()
-        {
-            bool ver = true;
-            if (this.Count == 0)
-            {
-                ver = true;
-            }
-            else
-            {
-                ver = false;
-            }
-            return ver;
-        }
     }
 }

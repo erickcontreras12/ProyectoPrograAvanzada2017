@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cola.cs" />
     <Compile Include="Datos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,9 +60,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GrupoUsuarios.cs" />
+    <Compile Include="nodo.cs" />
     <Compile Include="Pila.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reglamentos.cs" />
     <Compile Include="SGrupoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
