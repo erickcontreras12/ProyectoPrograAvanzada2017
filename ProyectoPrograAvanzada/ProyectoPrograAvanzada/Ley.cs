@@ -4,21 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PruebasConsolsa
+namespace ProyectoPrograAvanzada
 {
-    class GrupoUsuarios
+    class Ley
     {
 
-        public static int CAPACITY = 9;
+        public static int CAPACITY = 0;
         private int idGrupo;
-        private Usuario[] data;
+        private Reglamentos[] data;
         private int tamanio = 0;
         private int inicial = 0;
         private bool parlamentario;
 
-        public GrupoUsuarios()
+        public Ley(int n)
         {
-            data = new Usuario[CAPACITY];
+            CAPACITY = n;
+            data = new Reglamentos[CAPACITY];
         }
 
         public int size()
@@ -31,24 +32,20 @@ namespace PruebasConsolsa
             return tamanio == 0;
         }
 
-        public Usuario get(int i)
+        public Reglamentos get(int i)
         {
             return data[i];
         }
 
-        public Usuario set(int i, Usuario e)
+        public Reglamentos set(int i, Reglamentos e)
         {
-            Usuario temp = data[i];
+            Reglamentos temp = data[i];
             data[i] = e;
             return temp;
         }
 
-        public void add(int i, Usuario e)
+        public void add(int i, Reglamentos e)
         {
-            if (validarPuesto(e))
-            {
-                e.setPuesto();
-            }
 
             if (tamanio < data.Length)
             {
@@ -62,41 +59,30 @@ namespace PruebasConsolsa
             }
         }
 
-        public bool validarPuesto(Usuario e)
-        {
-            parlamentario = false;
-            for (int j = 0; j < data.Length; j++)
-            {
-                if (data[j].getPuesto() == "parlamentario" || data[j].getPuesto() == "Parlamentario")
-                {
-                    parlamentario = true;
-                }
-            }
 
-            return parlamentario;
-        }
-
-        public Usuario remove(int i)
+        public Reglamentos remove(int i)
         {
 
-            Usuario temp = data[i];
+            Reglamentos temp = data[i];
             for (int k = i; k < (tamanio - 1); k++)
             {
                 data[k] = data[k + 1];
-                data[tamanio - 1] = default(Usuario);
+                data[tamanio - 1] = default(Reglamentos);
             }
             tamanio--;
             return temp;
         }
 
-        public void mostrarUsuarios()
+        public String mostrarLey()
         {
+            string regreso= "";
             for (int i = 0; i < data.Length; i++)
             {
-                Console.WriteLine(data[i].toString());
+                regreso+= "Leyes" + data[i].ToString();
             }
-            
-        }
-    }
+            return regreso;
 
+        }
+    
+}
 }

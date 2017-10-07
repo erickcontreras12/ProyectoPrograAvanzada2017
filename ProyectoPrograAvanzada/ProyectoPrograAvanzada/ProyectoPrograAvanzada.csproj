@@ -46,19 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CGrupoUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CGrupoUsuario.Designer.cs">
-      <DependentUpon>CGrupoUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cola.cs" />
-    <Compile Include="CUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CUsuario.Designer.cs">
-      <DependentUpon>CUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Datos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,20 +60,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GrupoUsuarios.cs" />
-    <Compile Include="MUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MUsuario.Designer.cs">
-      <DependentUpon>MUsuario.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Ley.cs" />
     <Compile Include="nodo.cs" />
     <Compile Include="Pila.cs" />
-    <Compile Include="PrestDev.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrestDev.Designer.cs">
-      <DependentUpon>PrestDev.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reglamentos.cs" />
@@ -95,24 +72,6 @@
     <Compile Include="SGrupoUsuario.Designer.cs">
       <DependentUpon>SGrupoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="SLeyes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SLeyes.Designer.cs">
-      <DependentUpon>SLeyes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SReglamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SReglamento.Designer.cs">
-      <DependentUpon>SReglamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SUsuarios.Designer.cs">
-      <DependentUpon>SUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -120,23 +79,11 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CGrupoUsuario.resx">
-      <DependentUpon>CGrupoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CUsuario.resx">
-      <DependentUpon>CUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Datos.resx">
       <DependentUpon>Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MUsuario.resx">
-      <DependentUpon>MUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrestDev.resx">
-      <DependentUpon>PrestDev.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,33 +97,9 @@
     <EmbeddedResource Include="SGrupoUsuario.resx">
       <DependentUpon>SGrupoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SLeyes.resx">
-      <DependentUpon>SLeyes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SReglamento.resx">
-      <DependentUpon>SReglamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SUsuarios.resx">
-      <DependentUpon>SUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\DataSources\CGrupoUsuario.datasource" />
-    <None Include="Properties\DataSources\Cola`1[].datasource" />
-    <None Include="Properties\DataSources\Datos.datasource" />
-    <None Include="Properties\DataSources\Form1.datasource" />
-    <None Include="Properties\DataSources\nodo`1[].datasource" />
-    <None Include="Properties\DataSources\Pila`1[].datasource" />
-    <None Include="Properties\DataSources\Program.datasource" />
-    <None Include="Properties\DataSources\ProyectoPrograAvanzada.Properties.Resources.datasource" />
-    <None Include="Properties\DataSources\ProyectoPrograAvanzada.Properties.Settings.datasource" />
-    <None Include="Properties\DataSources\PruebasConsolsa.GrupoUsuarios.datasource" />
-    <None Include="Properties\DataSources\PruebasConsolsa.Usuario.datasource" />
-    <None Include="Properties\DataSources\Reglamentos.datasource" />
-    <None Include="Properties\DataSources\SGrupoUsuario.datasource" />
-    <None Include="Properties\DataSources\SUsuarios.datasource" />
-    <None Include="Properties\DataSources\Usuarios.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

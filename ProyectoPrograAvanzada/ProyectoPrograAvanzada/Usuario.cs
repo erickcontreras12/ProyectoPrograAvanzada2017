@@ -4,62 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoPrograAvanzada
+namespace PruebasConsolsa
 {
     class Usuario
     {
         private String puesto;
         private String nombre;
-        private int idUsuario;
+        private String idUsuario;
 
-        /// <summary>
-        /// Método constructor de la clase usuario
-        /// </summary>
-        /// <param name="n">Nombre del usuario</param>
-        /// <param name="p">Puesto del usuario</param>
-        /// <param name="id">ID del usuario</param>
-        public Usuario(String n, String p, int id)
+        public Usuario(String n, String p, String id)
         {
             puesto = p;
-            nombre = n;
-            idUsuario = id;
+            nombre= n;
+            idUsuario = id;    
         }
 
-        /// <summary>
-        /// Método que devuelve el id del usuario
-        /// </summary>
-        /// <returns>id del usuario</returns>
-        public int getID()
-        {
-            return idUsuario;
-        }
-
-        /// <summary>
-        /// Método que devuelve el valor del puesto del usuario
-        /// </summary>
-        /// <returns>Puesto del usuario</returns>
         public String getPuesto()
         {
             return puesto;
         }
 
-        /// <summary>
-        /// Método que define el puesto del usuario
-        /// </summary>
-        /// <param name="p">puesto del usuario</param>
-        public void setPuesto(String p)
+        public void setPuesto()
         {
-            puesto = p;
+            puesto = "asesor";
         }
 
-        /// <summary>
-        /// Método que imprime todas las propiedades de la clase
-        /// </summary>
-        /// <returns>Datos del usuario</returns>
         public String toString()
         {
-            return "Usuario[ID: " + idUsuario + "Nombre: " + nombre + " Puesto: "
-                + puesto + "]";
+            return "Usuario[ID: "+ idUsuario +"Nombre: "+nombre+" Puesto: "
+                + puesto +"]";
         }
     }
 }
