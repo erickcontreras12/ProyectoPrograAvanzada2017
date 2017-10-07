@@ -19,15 +19,8 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Usuarios vim4 = new Usuarios();
-            vim4.Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form1 menu = new Form1();
-            menu.Show();
+            Usuarios ven2 = new Usuarios();
+            ven2.Show();
             this.Hide();
         }
     }
