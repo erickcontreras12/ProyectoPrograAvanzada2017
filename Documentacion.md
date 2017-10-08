@@ -10,13 +10,13 @@ El sistema SysLey consiste en un programa capaz de realizar para acciones relaci
 Organización de Clases
 ----------------------
 
-+Grupo Usuarios: guarda a todos los usuarios que pertenecen a un mismo grupo.
-+Usuarios: guarda a los usuarios con sus propiedades.
-+Reglamentos: guarda los reglamentos de determinado ley.
-+Ley: almacena de todos los reglamentos de la ley.
-+Leyes: Almacena todas las leyes y sus copias.
-+Pila: Almacena las copias de las leyes y los reglamentos.
-+Prestamos por lote: Guarda a los usuarios que pidieron un lote de prestamos.
-+Prestamos: Guarda a los usuarios que pidieron un reglamento.
-+Cola: es la lista de espera de los préstamos que no se dieron por falta de disponibilidad de la ley o reglamento.
++ Grupo Usuarios: guarda a todos los usuarios que pertenecen a un mismo grupo.
++ Usuarios: guarda a los usuarios con sus propiedades.
++ Reglamentos: guarda los reglamentos de determinado ley.
++ Ley: almacena de todos los reglamentos de la ley.
++ Leyes: Almacena todas las leyes y sus copias.
++ Pila: Almacena las copias de las leyes y los reglamentos.
++ Prestamos por lote: Guarda a los usuarios que pidieron un lote de prestamos.
++ Prestamos: Guarda a los usuarios que pidieron un reglamento.
++ Cola: es la lista de espera de los préstamos que no se dieron por falta de disponibilidad de la ley o reglamento.
 
