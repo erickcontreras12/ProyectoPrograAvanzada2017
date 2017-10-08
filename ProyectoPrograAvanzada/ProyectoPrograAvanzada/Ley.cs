@@ -75,7 +75,7 @@ namespace ProyectoPrograAvanzada
             string regreso= "";
             for (int i = 0; i < data.Length; i++)
             {
-                regreso+= "Ley "+" "+idLey+" " + data[i].MostrarRegla()+"\n";
+                regreso+= "Ley "+" "+idLey+" " + data[i].getNombreregla()+"\n";
             }
             return regreso;
 

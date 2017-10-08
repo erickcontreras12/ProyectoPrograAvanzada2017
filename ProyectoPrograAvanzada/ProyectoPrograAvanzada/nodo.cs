@@ -11,6 +11,7 @@ namespace ProyectoPrograAvanzada
         //clase que contiene el dato y los enlaces de la pila
         public T dato;
         public nodo<T> anterior, siguiente;
+
         public nodo(T sDato)
         {
             dato = sDato;

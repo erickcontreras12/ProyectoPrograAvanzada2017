@@ -11,6 +11,7 @@ namespace ProyectoPrograAvanzada
     {
         nodo<T> cima;
         public Pila<T> siguiente;
+
         public Pila()
         {
             cima = null;

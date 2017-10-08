@@ -9,81 +9,66 @@ namespace ProyectoPrograAvanzada
     class Cola<T>
     {
         //ATRIBUTOS
-        T[] vec;
-        int p, u, tam;
+        private nodo<T> inicio;
+        private nodo<T> fin;
+        private int cola;
 
-        //CONSTRUCTOR
-        public Cola(int n)
-        {
-            p = u = -1;
-            tam = n;
-            vec = new T[tam];
-        }
-
-        public bool esta_llena()
-        {
-            if (u >= tam - 1)
-                return true;
-            return false;
-        }
-
+        
         public bool esta_vacia()
         {
-            if (p == -1)
+            if (cola == 0)
                 return true;
             return false;
         }
-
+    
         public bool agregar(T dato)
         {
-            if (!esta_llena())
+            nodo<T> nuevo = new nodo<T>(dato);
+            if (esta_vacia())
             {
-                vec[++u] = dato;
-                if (u == 0)
-                    p = 0;
-                return true;
+                inicio = nuevo;
             }
-            return false;
+            else
+            {
+                fin.siguiente = nuevo;
+            }
+            fin = nuevo;
+            cola++;
+            return true;
         }
 
-        public bool extraer(ref T dato)
+        public bool obtener()
         {
-            //ESTA VRIABLE SE USARA PARA MOVER EL DATO 1 al 0, el 2 al 1, el 3 al 2 ...
-            int var = 1;
-
-            //SI LA PILA NO ESTA VACIA:
-            if (!esta_vacia())
+            if (esta_vacia())
             {
-                //ENTONCES SACAMOS EL PRIMER DATO (P[O])
-                dato = vec[p];
-
-                for (int i = 0; i < vec.Length; i++)
+                return false;
+            }
+            else
+            {
+                inicio = inicio.siguiente;
+                cola--;
+                if (cola == 0)
                 {
-                    //SE PREGUNTA SI var ES MENOR A LA LONGITUD DEL ARREGLO, ESTO SE HACE DEBIDO A QUE var LLEGA A UN VALOR
-                    //SUPERIOR A LA LONGITUD DEL ARREGLO
-                    if (var < vec.Length)
-                    {
-                        //PASAMOS EL DATO DE UNA POSICION A OTRA
-                        //EJEMPLO: vec[0]=vec[1] EL DATO EN LA POSICION 1 SE PASA A LA POSICION 0 Y ASI HASTA LA LONGITUD DEL ARREGLO
-                        vec[i] = vec[var];
-                        var++;
-                    }
+                    fin = null;
                 }
-
-                //AHORA LA VARIABLE QUE SE IRA MOVIENDO SERA u, YA QUE EL PRIMERO SIEMPRE SERA EL ELEMENTO 0
-                if (u == p)
-                {
-                    p = u = -1;
-                }
-                else
-                    //DECREMENTAMOS u YA QUE QUIERE DECIR QUE "HAY UN DATO MENOS EN LA COLA", EN REALIDAD EL DATO SIGUE ALLI
-                    u--;
                 return true;
             }
-            return false;
         }
 
-
+        public T imprimirCola()
+        {
+            int tmp = cola;
+            
+            nodo<T> temp = inicio;
+            while (cola > 0)
+            {
+                T resultado = inicio.dato;
+                return resultado;
+                obtener();
+            }
+            inicio = temp;
+            cola = tmp;
+        }
    
 }
 }

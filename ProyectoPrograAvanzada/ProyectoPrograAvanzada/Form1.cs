@@ -23,5 +23,12 @@ namespace ProyectoPrograAvanzada
             vim1.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PrestDev vim2 = new PrestDev();
+            vim2.Show();
+            this.Hide();
+        }
     }
 }

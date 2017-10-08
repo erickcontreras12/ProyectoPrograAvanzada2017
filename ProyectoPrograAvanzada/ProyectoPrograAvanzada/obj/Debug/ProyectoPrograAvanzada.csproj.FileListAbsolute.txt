@@ -11,3 +11,13 @@ C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograA
 C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe.config
 C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.exe
 C:\Users\garya\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.pdb
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CGrupoUsuario.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CUsuario.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Datos.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.MUsuario.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.PrestDev.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SGrupoUsuario.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SLeyes.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SReglamento.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SUsuarios.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Usuarios.resources

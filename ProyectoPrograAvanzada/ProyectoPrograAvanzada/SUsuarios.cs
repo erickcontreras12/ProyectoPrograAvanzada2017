@@ -30,5 +30,19 @@ namespace ProyectoPrograAvanzada
             vim4.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CUsuario vim10 = new CUsuario();
+            vim10.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MUsuario vim11 = new MUsuario();
+            vim11.Show();
+            this.Hide();
+        }
     }
 }
