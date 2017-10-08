@@ -48,5 +48,14 @@ namespace ProyectoPrograAvanzada
         {
             return this.nombreRegla;
         }
+        /// <summary>
+        /// Muestra las propiedades de la regla
+        /// </summary>
+        /// <returns>devuelve un string con el texto que incluye las propiedades de la regla</returns>
+        public string MostrarRegla()
+        {
+            string regreso = "Id " + idregla + "Nombre " + nombreRegla;
+            return regreso;
+        }
     }
 }

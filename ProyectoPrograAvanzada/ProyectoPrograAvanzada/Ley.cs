@@ -50,11 +50,9 @@ namespace ProyectoPrograAvanzada
             if (tamanio < data.Length)
             {
 
-                for (int k = tamanio - 1; k >= i; k--)
-                {
-                    data[k + 1] = data[k];
+                 
                     data[i] = e;
-                }
+               
                 tamanio++;
             }
         }
@@ -78,7 +76,7 @@ namespace ProyectoPrograAvanzada
             string regreso= "";
             for (int i = 0; i < data.Length; i++)
             {
-                regreso+= "Leyes" + data[i].ToString();
+                regreso+= "Leyes" + data[i].MostrarRegla();
             }
             return regreso;
 
