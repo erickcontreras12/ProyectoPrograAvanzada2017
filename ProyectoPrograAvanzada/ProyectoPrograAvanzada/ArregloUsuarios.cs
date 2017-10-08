@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    class Leyes<T>
+    class ArregloUsuarios
     {
         int codigo;
-        public Pila<Ley> first, last;
-        public Leyes<Ley> siguiente;
+        public GrupoUsuarios first, last;
+        public ArregloUsuarios siguiente;
 
-        public Leyes(int codigo)
+        public ArregloUsuarios(int codigo)
         {
             this.codigo = codigo;
             first = last = null;
@@ -25,7 +25,7 @@ namespace ProyectoPrograAvanzada
             get { return codigo; }
         }
 
-        public void Insertar(Pila<Ley> nuevo)
+        public void Insertar(GrupoUsuarios nuevo)
         {
             if (first == null)
                 first = nuevo;
@@ -39,16 +39,16 @@ namespace ProyectoPrograAvanzada
             String regreso = "";
             if (first != null)
             {
-                Pila<Ley> actual = first;
-                Pila<Ley> Temp = actual;
+                GrupoUsuarios actual = first;
+                GrupoUsuarios Temp = actual;
                 while (actual != null)
                 {
-                    regreso += actual.verCima().mostrarLey() + "\n";
+                    regreso += actual.mostrarUsuarios()+ "\n";
                     actual = actual.siguiente;
                 }
             }
             else
-                regreso = "\nLa pila de leyes esta {0} Está Vacía...";
+                regreso = "\nla lista de usuarios esta {0} Está Vacía...";
 
             return regreso;
         }
@@ -58,12 +58,12 @@ namespace ProyectoPrograAvanzada
              Console.Write("N° Ley: {0}\n", codigo);
          }**/
 
-        public Pila<Ley> Buscar(int n)
+        public GrupoUsuarios Buscar(int n)
         {
-            Pila<Ley> actual = first;
+            GrupoUsuarios actual = first;
             while (actual != null)
             {
-                if (actual.verCima().getLey() == n)
+                if (actual.getIdGrupo() == n)
                     return actual;
                 actual = actual.siguiente;
             }
@@ -74,11 +74,11 @@ namespace ProyectoPrograAvanzada
         {
             if (first != null)
             {
-                Pila<Ley> actual, padre;
+                GrupoUsuarios actual, padre;
                 padre = BuscarPadre(n);
                 if (padre == last)
                 {
-                    MessageBox.Show("\nLey No Encontrada...");
+                    MessageBox.Show("\nUsuario No Encontrado...");
                     return;
                 }
                 if (padre == null)
@@ -95,20 +95,20 @@ namespace ProyectoPrograAvanzada
                 actual = null;
                 if (padre == null || padre.siguiente == null)
                     last = padre;
-                MessageBox.Show("Ley eliminada");
+                MessageBox.Show("Usuario eliminado");
             }
             else
-                MessageBox.Show("\nNo Existe ninguna ley");
+                MessageBox.Show("\nNo Existe ningun Usuario");
         }
 
-        private Pila<Ley> BuscarPadre(int n)
+        private GrupoUsuarios BuscarPadre(int n)
         {
-            Pila<Ley> padre, actual;
+            GrupoUsuarios padre, actual;
             actual = first;
             padre = null;
             while (actual != null)
             {
-                if (actual.verCima().getLey() == n)
+                if (actual.getIdGrupo() == n)
                     break;
                 padre = actual;
                 actual = actual.siguiente;

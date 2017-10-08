@@ -9,6 +9,8 @@ namespace ProyectoPrograAvanzada
 {
     class PrestamoporLote
     {
-       
+        GrupoUsuarios user = null;
+        Leyes<Ley> leyprestamo = null;
+         
     }
 }

@@ -14,6 +14,7 @@ namespace ProyectoPrograAvanzada
         private int tamanio = 0;
         private int inicial = 0;
         private bool parlamentario;
+        public GrupoUsuarios siguiente;
 
         /// <summary>
         /// Método constructor que define el tamaño del arreglo
@@ -24,6 +25,10 @@ namespace ProyectoPrograAvanzada
         {
             data = new Usuario[CAPACITY];
             idGrupo = i;
+        }
+        public int getIdGrupo()
+        {
+            return idGrupo;
         }
 
         /// <summary>
