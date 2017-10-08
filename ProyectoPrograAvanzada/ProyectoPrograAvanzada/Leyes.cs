@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
@@ -33,25 +34,29 @@ namespace ProyectoPrograAvanzada
             last = nuevo;
         }
 
-        public void Mostrar()
+        public String Mostrar()
         {
+            String regreso = "";
             if (first != null)
             {
                 Pila<Ley> actual = first;
+                Pila<Ley> Temp = actual;
                 while (actual != null)
                 {
-                    actual.verCima();
+                    regreso += actual.verCima().mostrarLey() + "\n";
                     actual = actual.siguiente;
                 }
             }
             else
-                Console.WriteLine("\nLa pila de leyes esta {0} Está Vacía...", codigo);
+                regreso = "\nLa pila de leyes esta {0} Está Vacía...";
+
+            return regreso;
         }
 
-        public void MostrarLay()
-        {
-            Console.Write("N° Ley: {0}\n", codigo);
-        }
+        /** public void MostrarLey()
+         {
+             Console.Write("N° Ley: {0}\n", codigo);
+         }**/
 
         public Pila<Ley> Buscar(int n)
         {
@@ -73,7 +78,7 @@ namespace ProyectoPrograAvanzada
                 padre = BuscarPadre(n);
                 if (padre == last)
                 {
-                    Console.WriteLine("\nLey No Encontrada...");
+                    MessageBox.Show("\nLey No Encontrada...");
                     return;
                 }
                 if (padre == null)
@@ -90,10 +95,10 @@ namespace ProyectoPrograAvanzada
                 actual = null;
                 if (padre == null || padre.siguiente == null)
                     last = padre;
-                Console.WriteLine("Pasajero Bajado Del Vagón...");
+                MessageBox.Show("Ley eliminada");
             }
             else
-                Console.WriteLine("\nNo Existe Ningún Pasajero...");
+                MessageBox.Show("\nNo Existe ninguna ley");
         }
 
         private Pila<Ley> BuscarPadre(int n)
@@ -103,7 +108,7 @@ namespace ProyectoPrograAvanzada
             padre = null;
             while (actual != null)
             {
-                if (actual.verCima().getLey() == n) 
+                if (actual.verCima().getLey() == n)
                     break;
                 padre = actual;
                 actual = actual.siguiente;
