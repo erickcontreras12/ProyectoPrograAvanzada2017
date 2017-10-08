@@ -97,7 +97,7 @@ namespace ProyectoPrograAvanzada
         public bool validarPuesto(Usuario e)
         {
             parlamentario = false;
-            for (int j = 0; j < data.Length; j++)
+            for (int j = 0; j < tamanio; j++)
             {
                 if (data[j].getPuesto() == "parlamentario" || data[j].getPuesto() == "Parlamentario")
                 {
@@ -133,11 +133,12 @@ namespace ProyectoPrograAvanzada
         /// </summary>
         public String mostrarUsuarios()
         {
-            for (int i = 0; i <= tamanio; i++)
+            string regresar = "";
+            for (int i = 0; i < tamanio; i++)
             {
-                return data[i].toString();
+                regresar += "" + data[i].toString() + "\n";
             }
-            return "";
+            return regresar;
         }
     }
 }
