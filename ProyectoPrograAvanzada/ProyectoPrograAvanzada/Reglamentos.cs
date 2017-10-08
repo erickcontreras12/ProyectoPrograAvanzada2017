@@ -48,5 +48,10 @@ namespace ProyectoPrograAvanzada
         {
             return this.nombreRegla;
         }
+        public string MostrarRegla()
+        {
+            string regreso = "Id  " + idregla + " Nombre " + nombreRegla;
+            return regreso;
+        }
     }
 }
