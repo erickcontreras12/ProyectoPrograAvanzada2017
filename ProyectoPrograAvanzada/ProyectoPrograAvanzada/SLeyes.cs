@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    public partial class Datos : Form
+    public partial class SLeyes : Form
     {
-        public Datos()
+        public SLeyes()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Usuarios vim4 = new Usuarios();
-            vim4.Show();
-            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Form1 menu = new Form1();
             menu.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Datos vim1 = new Datos();
+            vim1.Show();
             this.Hide();
         }
     }

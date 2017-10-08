@@ -10,25 +10,33 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    public partial class Datos : Form
+    public partial class CUsuario : Form
     {
-        public Datos()
+        public CUsuario()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Usuarios vim4 = new Usuarios();
-            vim4.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SUsuarios vim6 = new SUsuarios();
+            vim6.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            Form1 menu = new Form1();
-            menu.Show();
-            this.Hide();
+
+        }
+
+        private void CUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

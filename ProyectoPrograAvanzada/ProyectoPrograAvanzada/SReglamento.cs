@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    public partial class Datos : Form
+    public partial class SReglamento : Form
     {
-        public Datos()
+        public SReglamento()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            Usuarios vim4 = new Usuarios();
-            vim4.Show();
-            this.Hide();
+            Datos vim1 = new Datos();
+            vim1.Show();
+            this.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    public partial class Datos : Form
+    public partial class PrestDev : Form
     {
-        public Datos()
+        public PrestDev()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Usuarios vim4 = new Usuarios();
-            vim4.Show();
-            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
