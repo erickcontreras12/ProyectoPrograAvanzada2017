@@ -10,9 +10,11 @@ namespace ProyectoPrograAvanzada
     class Pila<T> : System.Collections.ArrayList
     {
         nodo<T> cima;
+        public Pila<T> siguiente;
         public Pila()
         {
             cima = null;
+            siguiente = null;
         }
 
         public bool pilaVacia()

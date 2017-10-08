@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="GrupoUsuarios.cs" />
     <Compile Include="Ley.cs" />
+    <Compile Include="Leyes.cs" />
     <Compile Include="nodo.cs" />
     <Compile Include="Pila.cs" />
     <Compile Include="Program.cs" />

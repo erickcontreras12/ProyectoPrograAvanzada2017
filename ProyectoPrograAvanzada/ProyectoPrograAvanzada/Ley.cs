@@ -10,12 +10,16 @@ namespace ProyectoPrograAvanzada
     {
 
         public static int CAPACITY = 0;
-        private int idGrupo;
+        private int idLey;
         private Reglamentos[] data;
         private int tamanio = 0;
         private int inicial = 0;
         private bool parlamentario;
 
+        public int getLey()
+        {
+            return idLey;
+        }
         public Ley(int n)
         {
             CAPACITY = n;
@@ -37,12 +41,7 @@ namespace ProyectoPrograAvanzada
             return data[i];
         }
 
-        public Reglamentos set(int i, Reglamentos e)
-        {
-            Reglamentos temp = data[i];
-            data[i] = e;
-            return temp;
-        }
+       
 
         public void add(int i, Reglamentos e)
         {
@@ -76,7 +75,7 @@ namespace ProyectoPrograAvanzada
             string regreso= "";
             for (int i = 0; i < data.Length; i++)
             {
-                regreso+= "Leyes" + data[i].MostrarRegla();
+                regreso+= "Ley "+" "+idLey+" " + data[i].MostrarRegla()+"\n";
             }
             return regreso;
 
