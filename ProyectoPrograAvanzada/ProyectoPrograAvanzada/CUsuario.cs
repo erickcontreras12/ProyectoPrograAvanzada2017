@@ -19,7 +19,10 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Usuario user = new ProyectoPrograAvanzada.Usuario(txtbNombreUsuario.Text, txtbPuestoUsuario.Text, Convert.ToInt32(txtbIDUsuario.Text));
+            ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).add(user);
+            MessageBox.Show("Usuario Creado");
+            MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,7 +39,12 @@ namespace ProyectoPrograAvanzada
 
         private void CUsuario_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < ClaseCompartida.arregloGrupos.getSize(); i++)
+            {
+                ArregloUsuarios temp = ClaseCompartida.arregloGrupos;
+                GrupoUsuarios temp2 = temp.BuscarPosicion(i);
+                comboBox2.Items.Add(temp2.getIdGrupo());
+            }
         }
     }
 }
