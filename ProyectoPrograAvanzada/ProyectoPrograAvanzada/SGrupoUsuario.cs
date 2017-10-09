@@ -37,5 +37,12 @@ namespace ProyectoPrograAvanzada
             vim7.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EGrupoUsuario vim17 = new EGrupoUsuario();
+            this.Hide();
+            vim17.Show();
+        }
     }
 }

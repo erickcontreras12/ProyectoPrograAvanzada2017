@@ -30,5 +30,19 @@ namespace ProyectoPrograAvanzada
             menu.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SLeyes vim8 = new SLeyes();
+            vim8.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SReglamento vim9 = new SReglamento();
+            vim9.Show();
+            this.Hide();
+        }
     }
 }

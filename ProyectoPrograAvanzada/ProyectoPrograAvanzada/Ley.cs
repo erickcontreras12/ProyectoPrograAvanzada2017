@@ -20,9 +20,10 @@ namespace ProyectoPrograAvanzada
         {
             return idLey;
         }
-        public Ley(int n)
+        public Ley(int n, int id)
         {
             CAPACITY = n;
+            idLey = id;
             data = new Reglamentos[CAPACITY];
         }
 

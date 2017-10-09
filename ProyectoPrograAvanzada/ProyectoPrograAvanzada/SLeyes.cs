@@ -30,5 +30,20 @@ namespace ProyectoPrograAvanzada
             vim1.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CLey vim12 = new CLey();
+            vim12.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MLey vim13 = new MLey();
+            vim13.Show();
+            this.Hide();
+
+        }
     }
 }

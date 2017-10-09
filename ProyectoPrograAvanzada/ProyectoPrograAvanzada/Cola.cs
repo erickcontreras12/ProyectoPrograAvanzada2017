@@ -55,7 +55,7 @@ namespace ProyectoPrograAvanzada
             }
         }
 
-        public T imprimirCola()
+        /**public T imprimirCola()
         {
             int tmp = cola;
             
@@ -69,6 +69,6 @@ namespace ProyectoPrograAvanzada
             inicio = temp;
             cola = tmp;
         }
-   
+   **/
 }
 }

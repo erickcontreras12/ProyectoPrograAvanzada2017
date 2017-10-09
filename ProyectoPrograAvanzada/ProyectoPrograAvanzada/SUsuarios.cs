@@ -44,5 +44,12 @@ namespace ProyectoPrograAvanzada
             vim11.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EUsuario vim16 = new EUsuario();
+            vim16.Show();
+            this.Hide();
+        }
     }
 }
