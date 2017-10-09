@@ -15,6 +15,7 @@ namespace ProyectoPrograAvanzada
         private int inicial = 0;
         private bool parlamentario;
         public GrupoUsuarios siguiente;
+        public int posicion = 0;
 
         /// <summary>
         /// Método constructor que define el tamaño del arreglo
@@ -38,6 +39,14 @@ namespace ProyectoPrograAvanzada
         public int size()
         {
             return tamanio;
+        }
+        public void setPosicion(int pos)
+        {
+            this.posicion = pos;
+        }
+        public int getPosicion()
+        {
+            return posicion;
         }
 
         /// <summary>
@@ -113,10 +122,10 @@ namespace ProyectoPrograAvanzada
         /// </summary>
         /// <param name="i">id del usuario a eliminar</param>
         /// <returns></returns>
-        public Usuario remove(int i)
+        public void remove(int i)
         {
             Usuario temp = null;
-            for (int k = 0; k <= tamanio; k++)
+            for (int k = 0; k < tamanio; k++)
             {
                 if (data[k].getID() == i)
                 {
@@ -125,7 +134,7 @@ namespace ProyectoPrograAvanzada
                     tamanio--;
                 }
             }
-            return temp;
+            // return temp;
         }
 
         /// <summary>
@@ -139,6 +148,23 @@ namespace ProyectoPrograAvanzada
                 regresar += "" + data[i].toString() + "\n";
             }
             return regresar;
+        }
+        public Usuario[] RecorrerUsuario()
+        {
+
+            return data;
+        }
+        public Usuario Buscar(int id)
+        {
+            Usuario retorno = null;
+            for (int i = 0; i < tamanio; i++)
+            {
+                if (id == data[i].getID())
+                {
+                    retorno = data[i];
+                }
+            }
+            return retorno;
         }
     }
 }

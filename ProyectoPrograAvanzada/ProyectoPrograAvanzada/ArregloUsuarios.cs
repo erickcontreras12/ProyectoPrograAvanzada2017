@@ -12,6 +12,8 @@ namespace ProyectoPrograAvanzada
         int codigo;
         public GrupoUsuarios first, last;
         public ArregloUsuarios siguiente;
+        int size = 0;
+        int ni = 0;
 
         public ArregloUsuarios(int codigo)
         {
@@ -32,6 +34,9 @@ namespace ProyectoPrograAvanzada
             else
                 last.siguiente = nuevo;
             last = nuevo;
+            size++;
+            nuevo.setPosicion(ni);
+            ni++;
         }
 
         public String Mostrar()
@@ -43,7 +48,7 @@ namespace ProyectoPrograAvanzada
                 GrupoUsuarios Temp = actual;
                 while (actual != null)
                 {
-                    regreso += actual.mostrarUsuarios()+ "\n";
+                    regreso += actual.mostrarUsuarios() + "\n";
                     actual = actual.siguiente;
                 }
             }
@@ -64,6 +69,17 @@ namespace ProyectoPrograAvanzada
             while (actual != null)
             {
                 if (actual.getIdGrupo() == n)
+                    return actual;
+                actual = actual.siguiente;
+            }
+            return null;
+        }
+        public GrupoUsuarios BuscarPosicion(int n)
+        {
+            GrupoUsuarios actual = first;
+            while (actual != null)
+            {
+                if (actual.getPosicion() == n)
                     return actual;
                 actual = actual.siguiente;
             }
@@ -96,6 +112,8 @@ namespace ProyectoPrograAvanzada
                 if (padre == null || padre.siguiente == null)
                     last = padre;
                 MessageBox.Show("Usuario eliminado");
+                size--;
+                ni--;
             }
             else
                 MessageBox.Show("\nNo Existe ningun Usuario");
@@ -114,6 +132,10 @@ namespace ProyectoPrograAvanzada
                 actual = actual.siguiente;
             }
             return padre;
+        }
+        public int getSize()
+        {
+            return size;
         }
     }
 }

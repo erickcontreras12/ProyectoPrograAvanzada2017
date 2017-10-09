@@ -33,6 +33,10 @@ namespace ProyectoPrograAvanzada
         {
             return idUsuario;
         }
+        public void setID(int id)
+        {
+            idUsuario = id;
+        }
 
         /// <summary>
         /// Método que devuelve el valor del puesto del usuario
@@ -60,6 +64,10 @@ namespace ProyectoPrograAvanzada
         {
             return "Usuario[ID: " + idUsuario + "Nombre: " + nombre + " Puesto: "
                 + puesto + "]";
+        }
+        public void setNombre(string nom)
+        {
+            this.nombre = nom;
         }
     }
 

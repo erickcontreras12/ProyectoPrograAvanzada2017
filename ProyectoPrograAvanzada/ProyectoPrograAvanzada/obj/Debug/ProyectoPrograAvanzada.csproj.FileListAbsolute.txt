@@ -29,3 +29,32 @@ C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograA
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.ELey.resources
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EReglamento.resources
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.MReglamento.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe.config
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.exe
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.pdb
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.exe
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\bin\Debug\ProyectoPrograAvanzada.pdb
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.csprojResolveAssemblyReference.cache
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CGrupoUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CLey.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CReglamento.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Datos.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EGrupoUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.ELey.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EliminarGrupo.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EliminarUser.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EReglamento.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Form1.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.MLey.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.MReglamento.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.MUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.PrestDev.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Properties.Resources.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SGrupoUsuario.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SLeyes.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SReglamento.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.SUsuarios.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Usuarios.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.csproj.GenerateResource.Cache

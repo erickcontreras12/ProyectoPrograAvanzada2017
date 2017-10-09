@@ -53,6 +53,7 @@
     <Compile Include="CGrupoUsuario.Designer.cs">
       <DependentUpon>CGrupoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClaseCompartida.cs" />
     <Compile Include="CLey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,18 @@
     </Compile>
     <Compile Include="ELey.Designer.cs">
       <DependentUpon>ELey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarGrupo.Designer.cs">
+      <DependentUpon>EliminarGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUser.Designer.cs">
+      <DependentUpon>EliminarUser.cs</DependentUpon>
     </Compile>
     <Compile Include="EReglamento.cs">
       <SubType>Form</SubType>
@@ -192,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ELey.resx">
       <DependentUpon>ELey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarGrupo.resx">
+      <DependentUpon>EliminarGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUser.resx">
+      <DependentUpon>EliminarUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EReglamento.resx">
       <DependentUpon>EReglamento.cs</DependentUpon>
