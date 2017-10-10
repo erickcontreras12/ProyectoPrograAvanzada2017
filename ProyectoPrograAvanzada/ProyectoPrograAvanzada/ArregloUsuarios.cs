@@ -29,15 +29,41 @@ namespace ProyectoPrograAvanzada
 
         public void Insertar(GrupoUsuarios nuevo)
         {
-            if (first == null)
-                first = nuevo;
-            else
-                last.siguiente = nuevo;
-            last = nuevo;
-            size++;
-            nuevo.setPosicion(ni);
-            ni++;
-        }
+            if (ni == 0)
+            {
+                if (first == null)
+                    first = nuevo;
+                else
+                    last.siguiente = nuevo;
+                last = nuevo;
+                size++;
+                nuevo.setPosicion(ni);
+                ni++;
+                MessageBox.Show("Grupo de Usuario Creado");
+            }
+            else if (ni > 0)
+            {
+                if (Buscar(nuevo.getIdGrupo()) == null)
+                {
+                    if (first == null)
+                        first = nuevo;
+                    else
+                        last.siguiente = nuevo;
+                    last = nuevo;
+                    size++;
+                    nuevo.setPosicion(ni);
+                    ni++;
+                    MessageBox.Show("Grupo de Usuario Creado");
+                }
+                else
+                {
+                    if (nuevo.getIdGrupo() == Buscar(nuevo.getIdGrupo()).getIdGrupo())
+                    {
+                        MessageBox.Show("No puede ingresar dos veces el mismo Id");
+                    }
+                }
+            }
+            }
 
         public String Mostrar()
         {

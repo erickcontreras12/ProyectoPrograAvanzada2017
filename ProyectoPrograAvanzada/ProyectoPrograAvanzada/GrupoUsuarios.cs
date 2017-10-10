@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
@@ -85,17 +86,43 @@ namespace ProyectoPrograAvanzada
         /// <param name="e">datos del nuevo usuario</param>
         public void add(Usuario e)
         {
-            if (validarPuesto(e))
+            if (tamanio == 0)
             {
-                e.setPuesto("asesor");
+                if (validarPuesto(e))
+                {
+                    e.setPuesto("asesor");
+                }
+
+                if (tamanio < data.Length)
+                {
+                    data[tamanio] = e;
+                    tamanio++;
+                }
+                MessageBox.Show("Usuario Creado");
+            }
+            else
+            {
+                if (Buscar(e.getID()) == null)
+                {
+                    if (validarPuesto(e))
+                    {
+                        e.setPuesto("asesor");
+                    }
+
+                    if (tamanio < data.Length)
+                    {
+                        data[tamanio] = e;
+                        tamanio++;
+                    }
+                    MessageBox.Show("Usuario Creado");
+                }
+                else if (e.getID() == Buscar(e.getID()).getID())
+                {
+                    MessageBox.Show("No puede repetir el id del usuario");
+                }
             }
 
-            if (tamanio < data.Length)
-            {
-                data[tamanio] = e;
-                tamanio++;
             }
-        }
 
         /// <summary>
         /// Método para validar el puesto del usuario (revisa para que solo
