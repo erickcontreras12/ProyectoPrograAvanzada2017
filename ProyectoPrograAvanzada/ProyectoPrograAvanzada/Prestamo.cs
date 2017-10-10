@@ -8,35 +8,60 @@ namespace ProyectoPrograAvanzada
 {
     class Prestamo
     {
-        private ArregloUsuarios usuarios;
-        private Leyes<Ley> leyes;
+        private int idPrestamo; 
+        private Usuario user;
+        private GrupoUsuarios grupo;
+        private Ley ley;
+        private Reglamentos reglamento;
 
-        public Prestamo()
+        public Prestamo(int n)
         {
-            usuarios = ClaseCompartida.arregloGrupos;
-            leyes = ClaseCompartida.arregloLeyes;
+            idPrestamo = n;
         }
 
-        public bool realizarPrestamo(int idUser, int idDocumento, int opc) {
-            //Valores de opc
+        public bool realizarPrestamo(int idGrupo,int idUser,int idLey, int idDocumento, int opc) {
+            //Valores de opc (OPC toma un valor en el form por un radiobutton
             //opc=1 : leyes
             //opc=2 : reglamento
-            //
-            if (opc == 1)
+            if (ClaseCompartida.arregloGrupos.Buscar(idGrupo) != null)
             {
-                leyes.Buscar(idDocumento);
-
+                grupo = ClaseCompartida.arregloGrupos.Buscar(idGrupo);
+                user = grupo.Buscar(idUser);
             }
-            else if (opc == 2)
+            else
             {
-
+                return false;
             }
+
+            if (ClaseCompartida.arregloLeyes.Buscar(idLey) != null)
+            {
+                ley = ClaseCompartida.arregloLeyes.first.verCima();
+            }
+            else
+            {
+                return false;
+            }
+
+
+
+            if (opc == 2)
+            {
+                if (true)
+                {
+                    reglamento = ley.get(0);
+                } 
+            }
+
             return true;
         }
 
-        public String imprimirPrestamo()
+        public String toString()
         {
-            return usuarios.Mostrar();
+            if (reglamento != null)
+            {
+                return "Prestamo [Usuario: "+ user +" + ley: "+ ley +" reglamento: "+ reglamento +"]";
+            }
+            return "Prestamo [Usuario: " + user + " + ley: " + ley + "]";
         }
     }
 }
