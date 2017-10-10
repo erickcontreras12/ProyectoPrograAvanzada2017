@@ -9,5 +9,6 @@ namespace ProyectoPrograAvanzada
     class ClaseCompartida
     {
         public static ArregloUsuarios arregloGrupos = new ArregloUsuarios(1);
+        public static Leyes<Ley> arregloLeyes = new Leyes<Ley>(1);
     }
 }

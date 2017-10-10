@@ -23,5 +23,12 @@ namespace ProyectoPrograAvanzada
             menu.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IPrestamo ven = new IPrestamo();
+            ven.Show();
+            this.Hide();
+        }
     }
 }

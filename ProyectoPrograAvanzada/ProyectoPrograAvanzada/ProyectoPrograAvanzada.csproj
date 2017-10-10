@@ -122,6 +122,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GrupoUsuarios.cs" />
+    <Compile Include="IPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPrestamo.Designer.cs">
+      <DependentUpon>IPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ley.cs" />
     <Compile Include="Leyes.cs" />
     <Compile Include="MLey.cs">
@@ -144,6 +150,7 @@
     </Compile>
     <Compile Include="nodo.cs" />
     <Compile Include="Pila.cs" />
+    <Compile Include="Prestamo.cs" />
     <Compile Include="PrestamoporLote.cs" />
     <Compile Include="PrestDev.cs">
       <SubType>Form</SubType>
@@ -220,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPrestamo.resx">
+      <DependentUpon>IPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MLey.resx">
       <DependentUpon>MLey.cs</DependentUpon>

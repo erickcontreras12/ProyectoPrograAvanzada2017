@@ -33,10 +33,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -50,6 +50,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Crear";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -90,19 +91,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reglamento inicial";
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(84, 83);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.label3.Location = new System.Drawing.Point(12, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Título del reglamento:";
             // 
             // label2
             // 
@@ -112,13 +107,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ID del reglamento:";
             // 
-            // label3
+            // textBox3
             // 
-            this.label3.Location = new System.Drawing.Point(12, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 31);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Título del reglamento:";
+            this.textBox3.Location = new System.Drawing.Point(84, 83);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(84, 39);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 0;
             // 
             // textBox4
             // 

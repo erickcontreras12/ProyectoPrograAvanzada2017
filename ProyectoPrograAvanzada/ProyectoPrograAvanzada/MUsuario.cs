@@ -51,5 +51,10 @@ namespace ProyectoPrograAvanzada
                 comboBox2.Items.Add(temp2.getIdGrupo());
             }
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
