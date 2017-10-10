@@ -23,5 +23,23 @@ namespace ProyectoPrograAvanzada
             vim5.Show();
             this.Hide();   
         }
+
+        private void EGrupoUsuario_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < ClaseCompartida.arregloGrupos.getSize(); i++)
+            {
+                ArregloUsuarios temp = ClaseCompartida.arregloGrupos;
+                GrupoUsuarios temp2 = temp.BuscarPosicion(i);
+                comboBox1.Items.Add(temp2.getIdGrupo());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(comboBox1.Text);
+            ClaseCompartida.arregloGrupos.Eliminar(id);
+            MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            this.Hide();
+        }
     }
 }

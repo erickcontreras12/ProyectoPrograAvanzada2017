@@ -47,8 +47,9 @@ namespace ProyectoPrograAvanzada
 
         private void button2_Click(object sender, EventArgs e)
         {
-            EliminarUser vim12 = new EliminarUser();
+            EUsuario vim12 = new EUsuario();
             vim12.Show();
+            this.Hide();
         }
     }
 }

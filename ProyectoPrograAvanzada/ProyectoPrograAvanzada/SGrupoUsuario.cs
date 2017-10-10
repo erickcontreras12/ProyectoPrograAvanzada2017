@@ -40,8 +40,9 @@ namespace ProyectoPrograAvanzada
 
         private void button2_Click(object sender, EventArgs e)
         {
-            EliminarGrupo vim1 = new EliminarGrupo();
+            EGrupoUsuario vim1 = new EGrupoUsuario();
             vim1.Show();
+            this.Hide();
         }
     }
 }

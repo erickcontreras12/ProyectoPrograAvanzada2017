@@ -31,14 +31,23 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int n = Convert.ToInt32(txtbIDGrupo.Text);
-            GrupoUsuarios grupo = new GrupoUsuarios(n);
-            int n2 = Convert.ToInt32(txtbIDUsuario.Text);
-            Usuario user = new Usuario(txtbNombreUsuario.Text, txtbPuestoUsuario.Text, n2);
-            grupo.add(user);
-            ClaseCompartida.arregloGrupos.Insertar(grupo);
-            MessageBox.Show("Grupo Creado");
-            MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            try
+            {
+                int n = Convert.ToInt32(txtbIDGrupo.Text);
+                GrupoUsuarios grupo = new GrupoUsuarios(n);
+                int n2 = Convert.ToInt32(txtbIDUsuario.Text);
+                Usuario user = new Usuario(txtbNombreUsuario.Text, txtbPuestoUsuario.Text, n2);
+                grupo.add(user);
+                ClaseCompartida.arregloGrupos.Insertar(grupo);
+                MessageBox.Show("Grupo Creado");
+                MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show(i.Message);
+                throw;
+            }
+           
         }
     }
 }

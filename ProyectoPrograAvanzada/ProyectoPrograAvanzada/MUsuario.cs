@@ -19,9 +19,18 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).Buscar(Convert.ToInt32(comboBox1.Text)).setNombre(txtbNombreUsuario.Text);
-            ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).Buscar(Convert.ToInt32(comboBox1.Text)).setPuesto(txtbPuestoUsuario.Text);
-            MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            try
+            {
+                ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).Buscar(Convert.ToInt32(comboBox1.Text)).setNombre(txtbNombreUsuario.Text);
+                ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).Buscar(Convert.ToInt32(comboBox1.Text)).setPuesto(txtbPuestoUsuario.Text);
+                MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show(i.Message);
+                throw;
+            }
+         
         
     }
 
