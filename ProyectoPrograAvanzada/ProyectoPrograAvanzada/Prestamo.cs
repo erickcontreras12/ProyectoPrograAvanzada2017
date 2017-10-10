@@ -14,6 +14,11 @@ namespace ProyectoPrograAvanzada
         private Ley ley;
         private Reglamentos reglamento;
 
+        public int getIdPrestamo()
+        {
+            return idPrestamo;
+        }
+
         public Prestamo(int n)
         {
             idPrestamo = n;
@@ -35,7 +40,7 @@ namespace ProyectoPrograAvanzada
 
             if (ClaseCompartida.arregloLeyes.Buscar(idLey) != null)
             {
-                ley = ClaseCompartida.arregloLeyes.first.verCima();
+                ley = ClaseCompartida.arregloLeyes.Buscar(idLey).verCima();
             }
             else
             {
@@ -63,5 +68,7 @@ namespace ProyectoPrograAvanzada
             }
             return "Prestamo [Usuario: " + user + " + ley: " + ley + "]";
         }
+
+        
     }
 }
