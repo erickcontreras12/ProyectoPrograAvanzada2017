@@ -200,6 +200,7 @@ namespace ProyectoPrograAvanzada
                 BuscarPosicion(i).setPosicion(i - 1);
             }
         }
+
         private GrupoUsuarios BuscarPadre(int n)
         {
             GrupoUsuarios padre, actual;

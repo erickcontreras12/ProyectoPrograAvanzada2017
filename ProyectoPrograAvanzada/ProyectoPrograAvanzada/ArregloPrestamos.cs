@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
     class ArregloPrestamos
     {
-        public nodo<Prestamo> inicio, fin;
+        public Prestamo inicio, fin;
         public ArregloPrestamos siguiente;
         public int size;
 
@@ -24,45 +25,147 @@ namespace ProyectoPrograAvanzada
             return size == 0;
         }
 
-        public void Insertar(nodo<Prestamo> e)
+        public void Insertar(Prestamo e)
         {
-            if (BuscarCopias(e.dato.getIDGrupoUsuario(),e.dato.getIDLey()) < 2)
+            if (size == 0)
             {
-                nodo<Prestamo> nuevo = e;
-                if (isEmpty())
+                    Prestamo nuevo = e;
+                    if (isEmpty())
+                    {
+                        inicio = nuevo;
+                    }
+                    else
+                    {
+                        fin.siguiente = nuevo;
+                    }
+                    fin = nuevo;
+                    nuevo.setPosicion(0);
+                    size++;
+            }
+            else if (size > 0)
+            {
+                if (BuscarCopias(e.getIDGrupoUsuario(), e.getIDLey()) < 2)
                 {
-                    inicio = nuevo;
+                    Prestamo nuevo = e;
+                    if (isEmpty())
+                    {
+                        inicio = nuevo;
+                    }
+                    else
+                    {
+                        fin.siguiente = nuevo;
+                    }
+                    fin = nuevo;
+                    nuevo.setPosicion(ultimaPosicion()+1);
+                    size++;
                 }
                 else
                 {
-                    fin.siguiente = nuevo;
+                    ClaseCompartida.listaDeEspera.agregar(e);
                 }
-                fin = nuevo;
-                size++;
-            }else
-            {
-                //Ingresa a la lista de espera
             }
+            
             
         }
 
-        public bool Eliminar(int d)
+        public int ultimaPosicion()
         {
-            if (Buscar(d) != null)
-            {
-                nodo<Prestamo> aux = Buscar(d);
-                aux = aux.siguiente;
-                return true;
-            }
-            return false;
+            return fin.getPosicion();
         }
 
-        public nodo<Prestamo> Buscar(int i)
+        //Devolución
+        public void Eliminar(int n)
         {
-            nodo<Prestamo> temp = inicio;
-            if (inicio != null)
+            if (size == 0)
             {
-                if (temp.dato.getIdPrestamo()==i)
+
+                if (inicio != null)
+                {
+                    Prestamo actual, padre;
+                    padre = BuscarPadre(n);
+                    if (padre == fin)
+                    {
+                        MessageBox.Show("\nPrestamo no encontrado...");
+                        return;
+                    }
+                    if (padre == null)
+                    {
+                        actual = inicio;
+                        inicio = inicio.siguiente;
+                        padre = inicio;
+                    }
+                    else
+                    {
+                        actual = padre.siguiente;
+                        padre.siguiente = actual.siguiente;
+                    }
+                    actual = null;
+                    if (padre == null || padre.siguiente == null)
+                        fin = padre;
+                    MessageBox.Show("eliminado");
+
+                    //ni--;
+                }
+                else
+                    MessageBox.Show("\nNo Existe ningun Prestamo");
+            }
+            else
+            {
+                AsignarPosicion(n);
+                size--;
+                if (inicio != null)
+                {
+                    Prestamo actual, padre;
+                    padre = BuscarPadre(n);
+                    if (padre == fin)
+                    {
+                        MessageBox.Show("\nPrestamo No Encontrado...");
+                        return;
+                    }
+                    if (padre == null)
+                    {
+                        actual = inicio;
+                        inicio = inicio.siguiente;
+                        padre = inicio;
+                    }
+                    else
+                    {
+                        actual = padre.siguiente;
+                        padre.siguiente = actual.siguiente;
+                    }
+                    actual = null;
+                    if (padre == null || padre.siguiente == null)
+                        fin = padre;
+                    MessageBox.Show("eliminado");
+
+                    //ni--;
+                }
+                else
+                    MessageBox.Show("\nNo Existe ningun Prestamo");
+
+            }
+
+        }
+
+        public Prestamo BuscarPosicion(int n)
+        {
+            Prestamo actual = inicio;
+            while (actual != null)
+            {
+                if (actual.getPosicion() == n)
+                    return actual;
+                actual = actual.siguiente;
+            }
+            return null;
+        }
+
+
+        public Prestamo Buscar(int i)
+        {
+            Prestamo temp = inicio;
+            while (inicio != null)
+            {
+                if (temp.getIdPrestamo()==i)
                 {
                     return temp;
                 }
@@ -71,15 +174,41 @@ namespace ProyectoPrograAvanzada
             return null;
         }
 
+        public void AsignarPosicion(int n)
+        {
+            Prestamo temp = Buscar(n);
+            int t = size - 1;
+            int l = temp.getPosicion();
+            for (int i = t; i > l; i--)
+            {
+                BuscarPosicion(i).setPosicion(i - 1);
+            }
+        }
+
+        private Prestamo BuscarPadre(int n)
+        {
+            Prestamo padre, actual;
+            actual = inicio;
+            padre = null;
+            while (actual != null)
+            {
+                if (actual.getIdPrestamo() == n)
+                    break;
+                padre = actual;
+                actual = actual.siguiente;
+            }
+            return padre;
+        }
+
         public int BuscarCopias(int idGrupo, int idLey)
         {
-            nodo<Prestamo> temp = inicio;
+            Prestamo temp = inicio;
             int copias = 0;
             while (temp != null)
             {
-                if (temp.dato.getIDGrupoUsuario() == idGrupo)
+                if (temp.getIDGrupoUsuario() == idGrupo)
                 {
-                    if (temp.dato.getIDLey() == idLey)
+                    if (temp.getIDLey() == idLey)
                     {
                         copias++;
                     }

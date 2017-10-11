@@ -37,21 +37,22 @@ namespace ProyectoPrograAvanzada
             return true;
         }
 
-        public bool obtener()
+        public T obtener()
         {
             if (esta_vacia())
             {
-                return false;
+                return default(T);
             }
             else
             {
+                nodo<T> aux = inicio;
                 inicio = inicio.siguiente;
                 cola--;
                 if (cola == 0)
                 {
                     fin = null;
                 }
-                return true;
+                return aux.dato;
             }
         }
 

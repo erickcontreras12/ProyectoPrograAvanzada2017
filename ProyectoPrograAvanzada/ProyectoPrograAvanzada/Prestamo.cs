@@ -13,7 +13,17 @@ namespace ProyectoPrograAvanzada
         private GrupoUsuarios grupo;
         private Ley ley;
         private Reglamentos reglamento;
+        public Prestamo siguiente;
+        private int posicion = 0;
 
+        public void setPosicion(int n)
+        {
+            this.posicion = n;
+        }
+        public int getPosicion()
+        {
+            return posicion;
+        }
         public int getIdPrestamo()
         {
             return idPrestamo;
