@@ -18,7 +18,14 @@ namespace ProyectoPrograAvanzada
         {
             return idPrestamo;
         }
-
+        public int getIDGrupoUsuario()
+        {
+            return grupo.getIdGrupo();
+        }
+        public int getIDLey()
+        {
+            return ley.getLey();
+        }
         public Prestamo(int n)
         {
             idPrestamo = n;
