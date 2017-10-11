@@ -23,6 +23,8 @@ namespace ProyectoPrograAvanzada
             ClaseCompartida.arregloGrupos.Eliminar(id);
             MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
             this.Hide();
+
+            
         }
     }
 }

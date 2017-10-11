@@ -26,17 +26,24 @@ namespace ProyectoPrograAvanzada
 
         public void Insertar(nodo<Prestamo> e)
         {
-            nodo<Prestamo> nuevo = e;
-            if (isEmpty())
+            if (BuscarCopias(e.dato.getIDGrupoUsuario(),e.dato.getIDLey()) < 2)
             {
-                inicio = nuevo;
-            }
-            else
+                nodo<Prestamo> nuevo = e;
+                if (isEmpty())
+                {
+                    inicio = nuevo;
+                }
+                else
+                {
+                    fin.siguiente = nuevo;
+                }
+                fin = nuevo;
+                size++;
+            }else
             {
-                fin.siguiente = nuevo;
+                //Ingresa a la lista de espera
             }
-            fin = nuevo;
-            size++;
+            
         }
 
         public bool Eliminar(int d)
@@ -62,6 +69,25 @@ namespace ProyectoPrograAvanzada
                 temp = temp.siguiente;
             }
             return null;
+        }
+
+        public int BuscarCopias(int idGrupo, int idLey)
+        {
+            nodo<Prestamo> temp = inicio;
+            int copias = 0;
+            while (temp != null)
+            {
+                if (temp.dato.getIDGrupoUsuario() == idGrupo)
+                {
+                    if (temp.dato.getIDLey() == idLey)
+                    {
+                        copias++;
+                    }
+                }
+                temp = temp.siguiente;
+            }
+            return copias;
+
         }
     }
 }
