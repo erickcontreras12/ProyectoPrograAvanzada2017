@@ -30,17 +30,17 @@ namespace ProyectoPrograAvanzada
             {
                 ArregloUsuarios temp = ClaseCompartida.arregloGrupos;
                 GrupoUsuarios temp2 = temp.BuscarPosicion(i);
-                comboBox2.Items.Add(temp2.getIdGrupo());
+                comboBox1.Items.Add(temp2.getIdGrupo());
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).size(); i++)
+            for (int i = 0; i < ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox1.Text)).size(); i++)
             {
                 ArregloUsuarios temp = ClaseCompartida.arregloGrupos;
-                int temp2 = temp.Buscar(Convert.ToInt32(comboBox2.Text)).RecorrerUsuario()[i].getID();
-                comboBox1.Items.Add(temp2);
+                int temp2 = temp.Buscar(Convert.ToInt32(comboBox1.Text)).RecorrerUsuario()[i].getID();
+                comboBox2.Items.Add(temp2);
             }
         }
 
@@ -48,7 +48,10 @@ namespace ProyectoPrograAvanzada
         {
             ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).remove(Convert.ToInt32(comboBox1.Text));
             MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            SUsuarios vim = new SUsuarios();
+            vim.Show();
             this.Hide();
+            
         }
     }
 }

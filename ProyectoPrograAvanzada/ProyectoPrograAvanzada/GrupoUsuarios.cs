@@ -99,9 +99,11 @@ namespace ProyectoPrograAvanzada
                     tamanio++;
                 }
                 MessageBox.Show("Usuario Creado");
+                e.posicion = 0;
             }
             else
             {
+                e.posicion = data.Length;
                 if (Buscar(e.getID()) == null)
                 {
                     if (validarPuesto(e))
@@ -151,7 +153,9 @@ namespace ProyectoPrograAvanzada
         /// <returns></returns>
         public void remove(int i)
         {
+           
             Usuario temp = null;
+            int p=0;
             for (int k = 0; k < tamanio; k++)
             {
                 if (data[k].getID() == i)
@@ -159,8 +163,10 @@ namespace ProyectoPrograAvanzada
                     temp = data[k];
                     data[k] = default(Usuario);
                     tamanio--;
+                    p = k;
                 }
             }
+            AsignarPos(i,p);
             // return temp;
         }
 
@@ -192,6 +198,13 @@ namespace ProyectoPrograAvanzada
                 }
             }
             return retorno;
+        }
+        public void AsignarPos(int n,int pos)
+        {
+            for (int i = pos; i < tamanio ; i++)
+            {
+                data[i] = data[i + 1];
+            }
         }
     }
 }

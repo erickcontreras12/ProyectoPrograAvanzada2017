@@ -39,6 +39,8 @@ namespace ProyectoPrograAvanzada
             int id = Convert.ToInt32(comboBox1.Text);
             ClaseCompartida.arregloGrupos.Eliminar(id);
             MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
+            SGrupoUsuario vim = new SGrupoUsuario();
+            vim.Show();
             this.Hide();
         }
     }

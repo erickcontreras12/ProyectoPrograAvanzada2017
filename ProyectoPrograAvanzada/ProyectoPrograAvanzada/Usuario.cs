@@ -11,6 +11,7 @@ namespace ProyectoPrograAvanzada
         private String puesto;
         private String nombre;
         private int idUsuario;
+        public int posicion;
 
         /// <summary>
         /// Método constructor de la clase usuario
