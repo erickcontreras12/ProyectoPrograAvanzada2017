@@ -29,29 +29,28 @@ namespace ProyectoPrograAvanzada
 
         public void Insertar(GrupoUsuarios nuevo)
         {
-            if (ni == 0)
+            if (size == 0)
             {
                 if (first == null)
                     first = nuevo;
                 else
                     last.siguiente = nuevo;
                 last = nuevo;
+                nuevo.setPosicion(0);
                 size++;
-                nuevo.setPosicion(ni);
-                ni++;
                 MessageBox.Show("Grupo de Usuario Creado");
             }
-            else if (ni > 0)
+            else if (size > 0)
             {
                 if (Buscar(nuevo.getIdGrupo()) == null)
                 {
+                    nuevo.setPosicion(UltimaPosicion() + 1);
                     if (first == null)
                         first = nuevo;
                     else
                         last.siguiente = nuevo;
                     last = nuevo;
                     size++;
-                    nuevo.setPosicion(ni);
                     ni++;
                     MessageBox.Show("Grupo de Usuario Creado");
                 }
@@ -62,8 +61,10 @@ namespace ProyectoPrograAvanzada
                         MessageBox.Show("No puede ingresar dos veces el mismo Id");
                     }
                 }
+
             }
-            }
+
+        }
 
         public String Mostrar()
         {
@@ -114,37 +115,91 @@ namespace ProyectoPrograAvanzada
 
         public void Eliminar(int n)
         {
-            if (first != null)
+            if (size == 0)
             {
-                GrupoUsuarios actual, padre;
-                padre = BuscarPadre(n);
-                if (padre == last)
+
+                if (first != null)
                 {
-                    MessageBox.Show("\nUsuario No Encontrado...");
-                    return;
-                }
-                if (padre == null)
-                {
-                    actual = first;
-                    first = first.siguiente;
-                    padre = first;
+                    GrupoUsuarios actual, padre;
+                    padre = BuscarPadre(n);
+                    if (padre == last)
+                    {
+                        MessageBox.Show("\nUsuario No Encontrado...");
+                        return;
+                    }
+                    if (padre == null)
+                    {
+                        actual = first;
+                        first = first.siguiente;
+                        padre = first;
+                    }
+                    else
+                    {
+                        actual = padre.siguiente;
+                        padre.siguiente = actual.siguiente;
+                    }
+                    actual = null;
+                    if (padre == null || padre.siguiente == null)
+                        last = padre;
+                    MessageBox.Show("Usuario eliminado");
+
+                    //ni--;
                 }
                 else
-                {
-                    actual = padre.siguiente;
-                    padre.siguiente = actual.siguiente;
-                }
-                actual = null;
-                if (padre == null || padre.siguiente == null)
-                    last = padre;
-                MessageBox.Show("Usuario eliminado");
-                size--;
-                ni--;
+                    MessageBox.Show("\nNo Existe ningun Usuario");
             }
             else
-                MessageBox.Show("\nNo Existe ningun Usuario");
+            {
+                AsignarPosicion(n);
+                size--;
+                if (first != null)
+                {
+                    GrupoUsuarios actual, padre;
+                    padre = BuscarPadre(n);
+                    if (padre == last)
+                    {
+                        MessageBox.Show("\nUsuario No Encontrado...");
+                        return;
+                    }
+                    if (padre == null)
+                    {
+                        actual = first;
+                        first = first.siguiente;
+                        padre = first;
+                    }
+                    else
+                    {
+                        actual = padre.siguiente;
+                        padre.siguiente = actual.siguiente;
+                    }
+                    actual = null;
+                    if (padre == null || padre.siguiente == null)
+                        last = padre;
+                    MessageBox.Show("Usuario eliminado");
+
+                    //ni--;
+                }
+                else
+                    MessageBox.Show("\nNo Existe ningun Usuario");
+
+            }
+
+        }
+        public int UltimaPosicion()
+        {
+            return last.getPosicion();
         }
 
+        public void AsignarPosicion(int n)
+        {
+            GrupoUsuarios temp = Buscar(n);
+            int t = size - 1;
+            int l = temp.getPosicion();
+            for (int i = t; i > l; i--)
+            {
+                BuscarPosicion(i).setPosicion(i - 1);
+            }
+        }
         private GrupoUsuarios BuscarPadre(int n)
         {
             GrupoUsuarios padre, actual;

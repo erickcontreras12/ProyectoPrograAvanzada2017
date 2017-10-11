@@ -46,7 +46,7 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox2.Text)).remove(Convert.ToInt32(comboBox1.Text));
+            ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox1.Text)).remove(Convert.ToInt32(comboBox2.Text));
             MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
             SUsuarios vim = new SUsuarios();
             vim.Show();
