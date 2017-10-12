@@ -16,6 +16,7 @@ namespace ProyectoPrograAvanzada
         /// </summary>
         private int idregla;
         private String nombreRegla;
+        public int posicion;
         /// <summary>
         /// ingresar el id del reglamento
         /// </summary>
