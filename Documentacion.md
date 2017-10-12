@@ -22,8 +22,10 @@ Organización de Clases
 Forms para implementar las clases
 ---------------------------------
 # Form Inicial
-El programa al compilar empieza en un pestaña que solo nos permite trasladarnos a las demás pestañas para poder ver los informes, realizar prestamos o devoluciones y entrar a la manipulación de datos.
+El programa al compilar empieza en un pestaña que solo nos permite trasladarnos a las demás pestañas para poder 
+ver los informes, realizar prestamos o devoluciones y entrar a la manipulación de datos.
 ![](https://image.ibb.co/jkQjWG/Form1.png)
+
 ---------------------------------
 ---------------------------------
 ## Datos
