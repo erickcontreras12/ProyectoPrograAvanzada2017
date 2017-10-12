@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
@@ -11,6 +12,7 @@ namespace ProyectoPrograAvanzada
 
         public static int CAPACITY = 0;
         private int idLey;
+        private String enunciado;
         private Reglamentos[] data;
         private int tamanio = 0;
         private int inicial = 0;
@@ -20,13 +22,27 @@ namespace ProyectoPrograAvanzada
         {
             return idLey;
         }
-        public Ley(int n, int id)
+        public Ley(int n, int id,string en)
         {
             CAPACITY = n;
             idLey = id;
             data = new Reglamentos[CAPACITY];
+            enunciado = en;
         }
+        public void setEnunciado(string en)
+        {
+            enunciado = en;
+        }
+        public Reglamentos[] RecorrerRegla()
+        {
 
+            return data;
+        }
+        public int getCapacity()
+        {
+            return CAPACITY;
+        }
+       
         public int size()
         {
             return tamanio;
@@ -42,39 +58,85 @@ namespace ProyectoPrograAvanzada
             return data[i];
         }
 
-       
+        public Reglamentos Buscar(int id)
+        {
+            Reglamentos retorno = null;
+            for (int i = 0; i < tamanio; i++)
+            {
+                if (id == data[i].getIdregla())
+                {
+                    retorno = data[i];
+                }
+            }
+            return retorno;
+        }
 
-        public void add(int i, Reglamentos e)
+        public void add(Reglamentos e)
         {
 
-            if (tamanio < data.Length)
+            if (tamanio == 0)
             {
-
-                 
-                    data[i] = e;
                
-                tamanio++;
+                if (tamanio < data.Length)
+                {
+                    data[tamanio] = e;
+                    tamanio++;
+                }
+               // MessageBox.Show("Usuario Creado");
+                e.posicion = 0;
+            }
+            else
+            {
+                e.posicion = data.Length;
+                if (Buscar(e.getIdregla()) == null)
+                {
+                    
+
+                    if (tamanio < data.Length)
+                    {
+                        data[tamanio] = e;
+                        tamanio++;
+                    }
+                    MessageBox.Show("Usuario Creado");
+                }
+                else if (e.getIdregla() == Buscar(e.getIdregla()).getIdregla())
+                {
+                    MessageBox.Show("No puede repetir el id del usuario");
+                }
             }
         }
 
 
-        public Reglamentos remove(int i)
+        public void remove(int i)
         {
-
-            Reglamentos temp = data[i];
-            for (int k = i; k < (tamanio - 1); k++)
+            int p=0;
+            Reglamentos temp = null;
+            for (int k = 0; k < tamanio; k++)
             {
-                data[k] = data[k + 1];
-                data[tamanio - 1] = default(Reglamentos);
+                if (data[k].getIdregla() == i)
+                {
+                    temp = data[k];
+                    data[k] = default(Reglamentos);
+                    tamanio--;
+                    p = k;
+                }
             }
-            tamanio--;
-            return temp;
+            AsignarPos(i, p);
+            // return temp;
+            MessageBox.Show("Usuario Eliminado");
+        }
+        public void AsignarPos(int n, int pos)
+        {
+            for (int i = pos; i < tamanio; i++)
+            {
+                data[i] = data[i + 1];
+            }
         }
 
         public String mostrarLey()
         {
             string regreso= "";
-            for (int i = 0; i < data.Length; i++)
+            for (int i = 0; i < tamanio; i++)
             {
                 regreso+= "Ley "+" "+idLey+" " + data[i].getNombreregla()+"\n";
             }

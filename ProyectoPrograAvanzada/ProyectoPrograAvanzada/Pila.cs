@@ -11,7 +11,15 @@ namespace ProyectoPrograAvanzada
     {
         nodo<T> cima;
         public Pila<T> siguiente;
-
+        public int posicion;
+        public void setPosicion(int pos)
+        {
+            this.posicion = pos;
+        }
+        public int getPosicion()
+        {
+            return posicion;
+        }
         public Pila()
         {
             cima = null;

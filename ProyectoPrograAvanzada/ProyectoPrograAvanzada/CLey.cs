@@ -31,7 +31,34 @@ namespace ProyectoPrograAvanzada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Leyes
+           // Leyes
+            try
+            {
+                Pila<Ley> pila1 = new Pila<Ley>();
+                Ley ley1 = new Ley(Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox1.Text),textBox4.Text);
+                Reglamentos regla = new Reglamentos();
+                regla.setIdregla(Convert.ToInt32(textBox2.Text));
+                regla.setNombreregla(textBox3.Text);
+                ley1.add(regla);
+                pila1.push(ley1);
+                pila1.push(ley1);
+                pila1.push(ley1);
+                pila1.push(ley1);
+                pila1.push(ley1);
+                ClaseCompartida.arregloLeyes.Insertar(pila1);
+                MessageBox.Show(ClaseCompartida.arregloLeyes.Mostrar());
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show(i.Message);
+                throw;
+            }
+
+        }
+
+        private void CLey_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
