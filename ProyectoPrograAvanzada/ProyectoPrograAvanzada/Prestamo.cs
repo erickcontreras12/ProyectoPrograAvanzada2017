@@ -42,6 +42,16 @@ namespace ProyectoPrograAvanzada
             idPrestamo = n;
         }
 
+        /// <summary>
+        /// Comprobar si el prestamo es posible de realizar con los
+        /// datos ingresado
+        /// </summary>
+        /// <param name="idGrupo">ID del grupo donde esta el usuario que hara el prestamo</param>
+        /// <param name="idUser">ID del usuario que hará el prestamo</param>
+        /// <param name="idLey">ID de la ley de donde se obtienen los reglamentos</param>
+        /// <param name="idDocumento">ID del reglamento que se prestará</param>
+        /// <param name="opc">Opcion para ver si el prestamo es por lotes o de un solo reglamento</param>
+        /// <returns>True si se puede realizar</returns>
         public bool realizarPrestamo(int idGrupo,int idUser,int idLey, int idDocumento, int opc) {
             //Valores de opc (OPC toma un valor en el form por un radiobutton
             //opc=1 : leyes
