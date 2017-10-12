@@ -218,5 +218,24 @@ namespace ProyectoPrograAvanzada
             return copias;
 
         }
+
+        public String Mostrar()
+        {
+            String regreso = "";
+            if (inicio != null)
+            {
+                Prestamo actual = inicio;
+                Prestamo Temp = actual;
+                while (actual != null)
+                {
+                    regreso += actual.toString() + "\n";
+                    actual = actual.siguiente;
+                }
+            }
+            else
+                regreso = "\nla lista de usuarios esta {0} Está Vacía...";
+
+            return regreso;
+        }
     }
 }

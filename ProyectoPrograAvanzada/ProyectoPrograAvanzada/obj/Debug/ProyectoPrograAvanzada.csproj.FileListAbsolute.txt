@@ -62,3 +62,5 @@ C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograA
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EliminarUser.resources
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.IPrestamo.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.IPrestamo.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.LPrestamo.resources
+C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Devolucion.resources

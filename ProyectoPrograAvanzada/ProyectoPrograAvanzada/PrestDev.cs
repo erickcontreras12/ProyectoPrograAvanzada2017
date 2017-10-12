@@ -30,5 +30,19 @@ namespace ProyectoPrograAvanzada
             ven.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LPrestamo ven2 = new LPrestamo();
+            ven2.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Devolucion ven3 = new Devolucion();
+            ven3.Show();
+            this.Hide();
+        }
     }
 }

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograAvanzada
 {
-    public partial class IPrestamo : Form
+    public partial class LPrestamo : Form
     {
-        public IPrestamo()
+        public LPrestamo()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PrestDev ven = new PrestDev();
+            ven.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -27,7 +34,7 @@ namespace ProyectoPrograAvanzada
             }
         }
 
-        private void IPrestamo_Load(object sender, EventArgs e)
+        private void LPrestamo_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < ClaseCompartida.arregloGrupos.getSize(); i++)
             {
@@ -44,38 +51,21 @@ namespace ProyectoPrograAvanzada
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            PrestDev ven = new PrestDev();
-            ven.Show();
-            this.Hide();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try
             {
                 Random obj = new Random();
-                Prestamo prestamo = new Prestamo(obj.Next(0, 10000));
+                Prestamo prestamo = new Prestamo(obj.Next(0, 100));
                 prestamo.grupo = ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox1.Text));
                 prestamo.user = prestamo.grupo.Buscar(Convert.ToInt32(comboBox2.Text));
                 prestamo.ley = ClaseCompartida.arregloLeyes.first.verCima();
-                prestamo.reglamento = prestamo.ley.Buscar(Convert.ToInt32(comboBox4.Text));
                 ClaseCompartida.arregloPrestamos.Insertar(prestamo);
                 MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
-            }catch (Exception i)
+            }
+            catch (Exception i)
             {
                 MessageBox.Show(i.Message);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < ClaseCompartida.arregloLeyes.Buscar(Convert.ToInt32(comboBox3.Text)).verCima().size(); i++)
-            {
-                Leyes<Ley> temp = ClaseCompartida.arregloLeyes;
-                int temp2 = temp.Buscar(Convert.ToInt32(comboBox3.Text)).verCima().RecorrerRegla()[i].getIdregla();
-                comboBox4.Items.Add(temp2);
             }
         }
     }

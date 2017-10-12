@@ -9,13 +9,14 @@ namespace ProyectoPrograAvanzada
     class Prestamo
     {
         private int idPrestamo; 
-        private Usuario user;
-        private GrupoUsuarios grupo;
-        private Ley ley;
-        private Reglamentos reglamento;
+        public Usuario user;
+        public GrupoUsuarios grupo;
+        public Ley ley;
+        public Reglamentos reglamento;
         public Prestamo siguiente;
         private int posicion = 0;
 
+        
         public void setPosicion(int n)
         {
             this.posicion = n;
@@ -81,9 +82,9 @@ namespace ProyectoPrograAvanzada
         {
             if (reglamento != null)
             {
-                return "Prestamo [Usuario: "+ user +" + ley: "+ ley +" reglamento: "+ reglamento +"]";
+                return "Prestamo: + " + idPrestamo + " [Usuario: " + user.toString() +" + ley: "+ ley +" reglamento: "+ reglamento +"]";
             }
-            return "Prestamo [Usuario: " + user + " + ley: " + ley + "]";
+            return "Prestamo: + "+ idPrestamo +" [Usuario: " + user.toString() + " + "+ ley.mostrarLey() +" ]";
         }
 
         

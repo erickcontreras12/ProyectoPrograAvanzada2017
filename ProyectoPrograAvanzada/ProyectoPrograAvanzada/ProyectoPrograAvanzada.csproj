@@ -80,6 +80,12 @@
     <Compile Include="Datos.Designer.cs">
       <DependentUpon>Datos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="EGrupoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     </Compile>
     <Compile Include="Ley.cs" />
     <Compile Include="Leyes.cs" />
+    <Compile Include="LPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPrestamo.Designer.cs">
+      <DependentUpon>LPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MLey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,7 +164,6 @@
     <Compile Include="nodo.cs" />
     <Compile Include="Pila.cs" />
     <Compile Include="Prestamo.cs" />
-    <Compile Include="PrestamoporLote.cs" />
     <Compile Include="PrestDev.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +219,9 @@
     <EmbeddedResource Include="Datos.resx">
       <DependentUpon>Datos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EGrupoUsuario.resx">
       <DependentUpon>EGrupoUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IPrestamo.resx">
       <DependentUpon>IPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPrestamo.resx">
+      <DependentUpon>LPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MLey.resx">
       <DependentUpon>MLey.cs</DependentUpon>
