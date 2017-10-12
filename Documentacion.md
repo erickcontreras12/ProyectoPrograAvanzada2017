@@ -16,7 +16,18 @@ Organización de Clases
 + Ley: almacena de todos los reglamentos de la ley.
 + Leyes: Almacena todas las leyes y sus copias.
 + Pila: Almacena las copias de las leyes y los reglamentos.
-+ Prestamos por lote: Guarda a los usuarios que pidieron un lote de prestamos.
-+ Prestamos: Guarda a los usuarios que pidieron un reglamento.
++ Prestamos: Almacena todas las propiedades contenidas en un prestamo.
 + Cola: es la lista de espera de los préstamos que no se dieron por falta de disponibilidad de la ley o reglamento.
+
+Forms para implementar las clases
+---------------------------------
+
+
+
+
+
+
+
+
+
 
