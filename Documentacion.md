@@ -22,7 +22,29 @@ Organización de Clases
 Forms para implementar las clases
 ---------------------------------
 # Form Inicial
-![](https://ibb.co/gCbV5b/Form1.png)
+![](https://image.ibb.co/cB3hJw/CGrupo_Usuario.png)
+![](https://image.ibb.co/jxqwdw/CLey.png)
+![](https://image.ibb.co/n7iSkb/CReglamento.png)
+![](https://image.ibb.co/mUvwdw/CUsuario.png)
+![](https://image.ibb.co/dcHnkb/Datos.png)
+![](https://image.ibb.co/bMtSkb/Devolucion.png)
+![](https://image.ibb.co/jqytQb/ELey.png)
+![](https://image.ibb.co/nBRrBG/Eliminar_Grupo.png)
+![](https://image.ibb.co/np3Gdw/EReglamento.png)
+![](https://image.ibb.co/nh7bdw/EUsuario.png)
+![](https://image.ibb.co/jkQjWG/Form1.png)
+![](https://image.ibb.co/hqSbdw/Informe.png)
+![](https://image.ibb.co/gT405b/IPrestamo.png)
+![](https://image.ibb.co/cOhnkb/LPrestamo.png)
+![](https://image.ibb.co/fq4NJw/MLey.png)
+![](https://image.ibb.co/nnWf5b/MReglamento.png)
+![](https://image.ibb.co/eqytQb/MUsuario.png)
+![](https://image.ibb.co/cv0jWG/PrestDev.png)
+![](https://image.ibb.co/mfSWBG/SGrupo_Usuarios.png)
+![](https://image.ibb.co/gLeNJw/SLeyes.png)
+![](https://image.ibb.co/bSD4WG/SReglamentos.png)
+![](https://image.ibb.co/iHwPWG/SUsuarios.png)
+![](https://image.ibb.co/nQcWBG/Usuarios.png)
 
 
 
