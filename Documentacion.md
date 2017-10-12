@@ -22,7 +22,8 @@ Organización de Clases
 Forms para implementar las clases
 ---------------------------------
 # Form Inicial
-![](https://ibb.co/gCbV5b)
+![](https://ibb.co/gCbV5b/Form1.png)
+
 
 
 
