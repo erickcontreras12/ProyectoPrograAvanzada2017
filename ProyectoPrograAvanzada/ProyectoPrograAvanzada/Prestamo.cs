@@ -59,6 +59,7 @@ namespace ProyectoPrograAvanzada
             if (ClaseCompartida.arregloLeyes.Buscar(idLey) != null)
             {
                 ley = ClaseCompartida.arregloLeyes.Buscar(idLey).verCima();
+                ClaseCompartida.arregloLeyes.Buscar(idLey).pop();
             }
             else
             {
