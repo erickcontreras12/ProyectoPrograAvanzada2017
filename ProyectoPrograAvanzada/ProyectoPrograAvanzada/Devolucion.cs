@@ -33,5 +33,10 @@ namespace ProyectoPrograAvanzada
                 comboBox1.Items.Add(aux.getIdPrestamo());
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClaseCompartida.arregloPrestamos.Eliminar(Convert.ToInt32(comboBox1.Text));
+        }
     }
 }
