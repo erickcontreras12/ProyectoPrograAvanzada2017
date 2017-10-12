@@ -11,7 +11,7 @@ namespace ProyectoPrograAvanzada
         private int idPrestamo; 
         public Usuario user;
         public GrupoUsuarios grupo;
-        public Ley ley;
+        public Ley ley, leyprestada;
         public Reglamentos reglamento;
         public Prestamo siguiente;
         private int posicion = 0;
@@ -46,27 +46,31 @@ namespace ProyectoPrograAvanzada
             //Valores de opc (OPC toma un valor en el form por un radiobutton
             //opc=1 : leyes
             //opc=2 : reglamento
-            if (ClaseCompartida.arregloGrupos.Buscar(idGrupo) != null)
+            if (opc != 2)
             {
-                grupo = ClaseCompartida.arregloGrupos.Buscar(idGrupo);
-                user = grupo.Buscar(idUser);
-            }
-            else
-            {
-                return false;
-            }
-
-            if (ClaseCompartida.arregloLeyes.Buscar(idLey) != null)
-            {
-                ley = ClaseCompartida.arregloLeyes.Buscar(idLey).verCima();
-                ClaseCompartida.arregloLeyes.Buscar(idLey).pop();
-            }
-            else
-            {
-                return false;
-            }
 
 
+                if (ClaseCompartida.arregloGrupos.Buscar(idGrupo) != null)
+                {
+                    grupo = ClaseCompartida.arregloGrupos.Buscar(idGrupo);
+                    user = grupo.Buscar(idUser);
+                }
+                else
+                {
+                    return false;
+                }
+
+                if (ClaseCompartida.arregloLeyes.Buscar(idLey) != null)
+                {
+                    ley = ClaseCompartida.arregloLeyes.Buscar(idLey).verCima();
+                    leyprestada = ClaseCompartida.arregloLeyes.Buscar(idLey).pop();
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
 
             if (opc == 2)
             {

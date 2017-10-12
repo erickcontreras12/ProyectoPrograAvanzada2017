@@ -56,12 +56,15 @@ namespace ProyectoPrograAvanzada
             try
             {
                 Random obj = new Random();
-                Prestamo prestamo = new Prestamo(obj.Next(0, 100));
+                Prestamo prestamo = new Prestamo(obj.Next(0, 10000));
                 prestamo.grupo = ClaseCompartida.arregloGrupos.Buscar(Convert.ToInt32(comboBox1.Text));
                 prestamo.user = prestamo.grupo.Buscar(Convert.ToInt32(comboBox2.Text));
                 prestamo.ley = ClaseCompartida.arregloLeyes.first.verCima();
-                ClaseCompartida.arregloPrestamos.Insertar(prestamo);
-                MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
+                if (prestamo.realizarPrestamo(prestamo.getIDGrupoUsuario(), prestamo.user.getID(), prestamo.getIDLey(), prestamo.reglamento.getIdregla(), 1))
+                {
+                    ClaseCompartida.arregloPrestamos.Insertar(prestamo);
+                    MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
+                }
             }
             catch (Exception i)
             {

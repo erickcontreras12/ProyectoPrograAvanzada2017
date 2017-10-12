@@ -61,8 +61,12 @@ namespace ProyectoPrograAvanzada
                 prestamo.user = prestamo.grupo.Buscar(Convert.ToInt32(comboBox2.Text));
                 prestamo.ley = ClaseCompartida.arregloLeyes.first.verCima();
                 prestamo.reglamento = prestamo.ley.Buscar(Convert.ToInt32(comboBox4.Text));
-                ClaseCompartida.arregloPrestamos.Insertar(prestamo);
-                MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
+                if (prestamo.realizarPrestamo(prestamo.getIDGrupoUsuario(),prestamo.user.getID(),prestamo.getIDLey(),prestamo.reglamento.getIdregla(),2))
+                {
+                    ClaseCompartida.arregloPrestamos.Insertar(prestamo);
+                    MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
+                }
+               
             }catch (Exception i)
             {
                 MessageBox.Show(i.Message);
