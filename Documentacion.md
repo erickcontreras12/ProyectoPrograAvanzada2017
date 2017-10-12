@@ -22,29 +22,61 @@ Organización de Clases
 Forms para implementar las clases
 ---------------------------------
 # Form Inicial
-![](https://image.ibb.co/cB3hJw/CGrupo_Usuario.png)
-![](https://image.ibb.co/jxqwdw/CLey.png)
-![](https://image.ibb.co/n7iSkb/CReglamento.png)
-![](https://image.ibb.co/mUvwdw/CUsuario.png)
-![](https://image.ibb.co/dcHnkb/Datos.png)
-![](https://image.ibb.co/bMtSkb/Devolucion.png)
-![](https://image.ibb.co/jqytQb/ELey.png)
-![](https://image.ibb.co/nBRrBG/Eliminar_Grupo.png)
-![](https://image.ibb.co/np3Gdw/EReglamento.png)
-![](https://image.ibb.co/nh7bdw/EUsuario.png)
+El programa al compilar empieza en un pestaña que solo nos permite trasladarnos a las demás pestañas para poder ver los informes, realizar prestamos o devoluciones y entrar a la manipulación de datos.
 ![](https://image.ibb.co/jkQjWG/Form1.png)
-![](https://image.ibb.co/hqSbdw/Informe.png)
-![](https://image.ibb.co/gT405b/IPrestamo.png)
-![](https://image.ibb.co/cOhnkb/LPrestamo.png)
-![](https://image.ibb.co/fq4NJw/MLey.png)
-![](https://image.ibb.co/nnWf5b/MReglamento.png)
-![](https://image.ibb.co/eqytQb/MUsuario.png)
-![](https://image.ibb.co/cv0jWG/PrestDev.png)
-![](https://image.ibb.co/mfSWBG/SGrupo_Usuarios.png)
-![](https://image.ibb.co/gLeNJw/SLeyes.png)
-![](https://image.ibb.co/bSD4WG/SReglamentos.png)
-![](https://image.ibb.co/iHwPWG/SUsuarios.png)
+
+## Datos
+![](https://image.ibb.co/dcHnkb/Datos.png)
+
+### Usuarios
 ![](https://image.ibb.co/nQcWBG/Usuarios.png)
+#### Grupo Usuario
+![](https://image.ibb.co/mfSWBG/SGrupo_Usuarios.png)
+##### Crear
+![](https://image.ibb.co/cB3hJw/CGrupo_Usuario.png)
+##### Eliminar
+![](https://image.ibb.co/nBRrBG/Eliminar_Grupo.png)
+
+
+#### Usuario Individual
+![](https://image.ibb.co/iHwPWG/SUsuarios.png)
+##### Crear
+![](https://image.ibb.co/mUvwdw/CUsuario.png)
+##### Eliminar
+![](https://image.ibb.co/nh7bdw/EUsuario.png)
+##### Modificar
+![](https://image.ibb.co/eqytQb/MUsuario.png)
+
+### Leyes
+![](https://image.ibb.co/gLeNJw/SLeyes.png)
+#### Crear
+![](https://image.ibb.co/jxqwdw/CLey.png)
+#### Eliminar
+![](https://image.ibb.co/jqytQb/ELey.png)
+#### Modificar
+![](https://image.ibb.co/fq4NJw/MLey.png)
+
+### Reglamentos
+![](https://image.ibb.co/bSD4WG/SReglamentos.png)
+#### Crear
+![](https://image.ibb.co/n7iSkb/CReglamento.png)
+#### Eliminar
+![](https://image.ibb.co/np3Gdw/EReglamento.png)
+#### Modificar
+![](https://image.ibb.co/nnWf5b/MReglamento.png)
+
+## Prestamo/Devolución
+![](https://image.ibb.co/cv0jWG/PrestDev.png)
+### Prestamo indivual
+![](https://image.ibb.co/gT405b/IPrestamo.png)
+### Prestamo por lote
+![](https://image.ibb.co/cOhnkb/LPrestamo.png)
+### Devolución
+![](https://image.ibb.co/bMtSkb/Devolucion.png)
+
+
+## Informes
+![](https://image.ibb.co/hqSbdw/Informe.png)
 
 
 
