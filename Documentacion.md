@@ -24,7 +24,8 @@ Forms para implementar las clases
 # Form Inicial
 El programa al compilar empieza en un pestaña que solo nos permite trasladarnos a las demás pestañas para poder ver los informes, realizar prestamos o devoluciones y entrar a la manipulación de datos.
 ![](https://image.ibb.co/jkQjWG/Form1.png)
-
+---------------------------------
+---------------------------------
 ## Datos
 ![](https://image.ibb.co/dcHnkb/Datos.png)
 
@@ -46,7 +47,7 @@ El programa al compilar empieza en un pestaña que solo nos permite trasladarnos
 ![](https://image.ibb.co/nh7bdw/EUsuario.png)
 ##### Modificar
 ![](https://image.ibb.co/eqytQb/MUsuario.png)
-
+---------------------------------
 ### Leyes
 ![](https://image.ibb.co/gLeNJw/SLeyes.png)
 #### Crear
@@ -55,7 +56,7 @@ El programa al compilar empieza en un pestaña que solo nos permite trasladarnos
 ![](https://image.ibb.co/jqytQb/ELey.png)
 #### Modificar
 ![](https://image.ibb.co/fq4NJw/MLey.png)
-
+---------------------------------
 ### Reglamentos
 ![](https://image.ibb.co/bSD4WG/SReglamentos.png)
 #### Crear
@@ -64,7 +65,8 @@ El programa al compilar empieza en un pestaña que solo nos permite trasladarnos
 ![](https://image.ibb.co/np3Gdw/EReglamento.png)
 #### Modificar
 ![](https://image.ibb.co/nnWf5b/MReglamento.png)
-
+---------------------------------
+---------------------------------
 ## Prestamo/Devolución
 ![](https://image.ibb.co/cv0jWG/PrestDev.png)
 ### Prestamo indivual
@@ -73,8 +75,8 @@ El programa al compilar empieza en un pestaña que solo nos permite trasladarnos
 ![](https://image.ibb.co/cOhnkb/LPrestamo.png)
 ### Devolución
 ![](https://image.ibb.co/bMtSkb/Devolucion.png)
-
-
+---------------------------------
+---------------------------------
 ## Informes
 ![](https://image.ibb.co/hqSbdw/Informe.png)
 
