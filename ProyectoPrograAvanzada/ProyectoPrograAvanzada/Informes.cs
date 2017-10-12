@@ -23,5 +23,15 @@ namespace ProyectoPrograAvanzada
             ven.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(ClaseCompartida.listaDeEspera.ToString());
+        }
     }
 }
