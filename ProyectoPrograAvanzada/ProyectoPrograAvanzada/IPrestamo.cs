@@ -67,15 +67,16 @@ namespace ProyectoPrograAvanzada
                     {
                         ClaseCompartida.arregloPrestamos.Insertar(prestamo);
                         ClaseCompartida.arregloLeyes.Buscar(Convert.ToInt32(comboBox3.Text)).verCima().Buscar(Convert.ToInt32(comboBox4.Text)).RegLaPrestada();
-
+                        MessageBox.Show("Regla prestada");
                     }
-                    
+                    else
+                    {
+                        MessageBox.Show("Su solicitud no esta disponible, sera ingresado a una lista de espera");
+                        ClaseCompartida.listaEspera.Insertar(prestamo);
+                    }
+
                 }
-                else
-                {
-                    MessageBox.Show("Su solicitud no esta disponible, sera ingresado a una lista de espera");
-                    ClaseCompartida.listaEspera.Insertar(prestamo);
-                }
+                
                
             }catch (Exception i)
             {

@@ -39,9 +39,10 @@ namespace ProyectoPrograAvanzada
         private void button1_Click(object sender, EventArgs e)
         {
             int idley = 0;
+            idley = ClaseCompartida.arregloPrestamos.Buscar(Convert.ToInt32(comboBox1.Text)).getIDLey();
             if (comboBox2.Text == "Ley")
             {
-                 idley = ClaseCompartida.arregloPrestamos.Buscar(Convert.ToInt32(comboBox1.Text)).getIDLey();
+                 
                 ClaseCompartida.arregloLeyes.Buscar(idley).push(ClaseCompartida.prestamoLey.Buscar(idley));
                 ClaseCompartida.prestamoLey.Eliminar(idley);
                 ClaseCompartida.arregloPrestamos.Eliminar(Convert.ToInt32(comboBox1.Text));

@@ -17,7 +17,7 @@ namespace ProyectoPrograAvanzada
         private int idregla;
         private String nombreRegla;
         public int posicion;
-        public bool disponible;
+        public bool disponible=true;
         public int numCopias = 5;
         /// <summary>
         /// ingresar el id del reglamento
