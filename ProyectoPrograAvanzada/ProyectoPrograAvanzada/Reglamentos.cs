@@ -17,6 +17,7 @@ namespace ProyectoPrograAvanzada
         private int idregla;
         private String nombreRegla;
         public int posicion;
+        public bool disponible;
         /// <summary>
         /// ingresar el id del reglamento
         /// </summary>
@@ -32,6 +33,14 @@ namespace ProyectoPrograAvanzada
         public int getIdregla()
         {
             return this.idregla;
+        }
+        public void setDisponible(bool poc)
+        {
+            disponible = poc;
+        }
+        public bool getDisponible()
+        {
+            return disponible;
         }
         /// <summary>
         /// Ingresar el nombre del reglamento
