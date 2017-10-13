@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoPrograAvanzada
 {
+    /// <summary>
+    /// Clase que contiene los array generales donde se guardan todos los datos.
+    /// </summary>
     class ClaseCompartida
     {
         public static ArregloUsuarios arregloGrupos = new ArregloUsuarios(1);

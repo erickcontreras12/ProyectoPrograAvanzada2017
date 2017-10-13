@@ -9,6 +9,9 @@ namespace ProyectoPrograAvanzada
 {
     class Ley
     {
+        /// <summary>
+        /// Propiedades de la clase
+        /// </summary>
 
         public static int CAPACITY = 0;
         private int idLey;
@@ -18,10 +21,20 @@ namespace ProyectoPrograAvanzada
         private int inicial = 0;
         private bool parlamentario;
 
+        /// <summary>
+        /// Obtiene ley
+        /// </summary>
+        /// <returns>retorna id de ley</returns>
         public int getLey()
         {
             return idLey;
         }
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="n">numero reglas</param>
+        /// <param name="id">id de grupo</param>
+        /// <param name="en">enunciado</param>
         public Ley(int n, int id,string en)
         {
             CAPACITY = n;
@@ -29,25 +42,43 @@ namespace ProyectoPrograAvanzada
             data = new Reglamentos[CAPACITY];
             enunciado = en;
         }
+        /// <summary>
+        /// Ingresa enunciado
+        /// </summary>
+        /// <param name="en">texto de enunciado</param>
         public void setEnunciado(string en)
         {
             enunciado = en;
         }
+        /// <summary>
+        /// Recorre el arreglo de reglamentos
+        /// </summary>
+        /// <returns></returns>
         public Reglamentos[] RecorrerRegla()
         {
 
             return data;
         }
+        /// <summary>
+        /// Obtiene capacidad
+        /// </summary>
+        /// <returns>capacidad arreglo usuarios</returns>
         public int getCapacity()
         {
             return CAPACITY;
         }
-       
+       /// <summary>
+       /// Tamaño
+       /// </summary>
+       /// <returns>tamaño de la lista</returns>
         public int size()
         {
             return tamanio;
         }
-
+        /// <summary>
+        /// Lista vacia
+        /// </summary>
+        /// <returns>si la esta esta vacia</returns>
         public bool isEmpty()
         {
             return tamanio == 0;
@@ -57,7 +88,11 @@ namespace ProyectoPrograAvanzada
         {
             return data[i];
         }
-
+        /// <summary>
+        /// Busca un dato dentro del array
+        /// </summary>
+        /// <param name="id">id de la ley</param>
+        /// <returns>dato que encuentra</returns>
         public Reglamentos Buscar(int id)
         {
             Reglamentos retorno = null;
@@ -70,7 +105,10 @@ namespace ProyectoPrograAvanzada
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Agrega un dato
+        /// </summary>
+        /// <param name="e">tipo reglamentos</param>
         public void add(Reglamentos e)
         {
 
@@ -106,7 +144,10 @@ namespace ProyectoPrograAvanzada
             }
         }
 
-
+        /// <summary>
+        /// Elimina un dato
+        /// </summary>
+        /// <param name="i">elimina un dato</param>
         public void remove(int i)
         {
             int p=0;
@@ -125,6 +166,11 @@ namespace ProyectoPrograAvanzada
             // return temp;
             MessageBox.Show("Usuario Eliminado");
         }
+        /// <summary>
+        /// Reasigna posiciones
+        /// </summary>
+        /// <param name="n">id</param>
+        /// <param name="pos">posicion</param>
         public void AsignarPos(int n, int pos)
         {
             for (int i = pos; i < tamanio; i++)
@@ -132,7 +178,10 @@ namespace ProyectoPrograAvanzada
                 data[i] = data[i + 1];
             }
         }
-
+        /// <summary>
+        /// MUESTRA LA LEY
+        /// </summary>
+        /// <returns>texto con la ley</returns>
         public String mostrarLey()
         {
             string regreso= "";

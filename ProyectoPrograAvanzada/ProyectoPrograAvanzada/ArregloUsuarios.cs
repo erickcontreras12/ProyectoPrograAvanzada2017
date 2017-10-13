@@ -26,7 +26,10 @@ namespace ProyectoPrograAvanzada
         {
             get { return codigo; }
         }
-
+        /// <summary>
+        /// Insetar un nuevo dato en la lista
+        /// </summary>
+        /// <param name="nuevo">Insertar un grupo de usuarios</param>
         public void Insertar(GrupoUsuarios nuevo)
         {
             if (size == 0)
@@ -65,7 +68,10 @@ namespace ProyectoPrograAvanzada
             }
 
         }
-
+        /// <summary>
+        /// Mostrar un Dato
+        /// </summary>
+        /// <returns>Retorna los datos dentro del array</returns>
         public String Mostrar()
         {
             String regreso = "";
@@ -85,11 +91,12 @@ namespace ProyectoPrograAvanzada
             return regreso;
         }
 
-        /** public void MostrarLey()
-         {
-             Console.Write("N° Ley: {0}\n", codigo);
-         }**/
-
+       /// <summary>
+       /// Busca un dato en el array
+       /// </summary>
+       /// <param name="n">id del grupo</param>
+       /// <returns>Dato del array con el id</returns>
+       
         public GrupoUsuarios Buscar(int n)
         {
             GrupoUsuarios actual = first;
@@ -101,6 +108,11 @@ namespace ProyectoPrograAvanzada
             }
             return null;
         }
+        /// <summary>
+        /// Busca la posición de un grupo
+        /// </summary>
+        /// <param name="n">posición de grupo</param>
+        /// <returns></returns>
         public GrupoUsuarios BuscarPosicion(int n)
         {
             GrupoUsuarios actual = first;
@@ -113,6 +125,10 @@ namespace ProyectoPrograAvanzada
             return null;
         }
 
+        /// <summary>
+        /// Elimina un dato en el id indicado
+        /// </summary>
+        /// <param name="n">id del grupo</param>
         public void Eliminar(int n)
         {
             if (size == 0)
@@ -185,10 +201,18 @@ namespace ProyectoPrograAvanzada
             }
 
         }
+        /// <summary>
+        /// Valor de la posicion del ultimo dato
+        /// </summary>
+        /// <returns>ultima posicion</returns>
         public int UltimaPosicion()
         {
             return last.getPosicion();
         }
+        /// <summary>
+        /// Reasigna posiciones al eliminar un dato
+        /// </summary>
+        /// <param name="n">id del grupo</param>
 
         public void AsignarPosicion(int n)
         {
@@ -215,6 +239,10 @@ namespace ProyectoPrograAvanzada
             }
             return padre;
         }
+        /// <summary>
+        /// obtiene el tamaño
+        /// </summary>
+        /// <returns>Tamaño del array</returns>
         public int getSize()
         {
             return size;
