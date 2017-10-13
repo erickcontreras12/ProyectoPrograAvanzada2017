@@ -45,8 +45,7 @@ namespace ProyectoPrograAvanzada
             }
             else if (size > 0)
             {
-                if (Buscar(nuevo.getLey()) == null)
-                {
+                
                     nuevo.setPosicion(UltimaPosicion() + 1);
                     if (first == null)
                         first = nuevo;
@@ -55,7 +54,7 @@ namespace ProyectoPrograAvanzada
                     last = nuevo;
                     size++;
                     MessageBox.Show("Ley Creada");
-                }
+                
                 
             }
         }
