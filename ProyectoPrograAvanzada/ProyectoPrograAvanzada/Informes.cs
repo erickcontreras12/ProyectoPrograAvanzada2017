@@ -31,7 +31,13 @@ namespace ProyectoPrograAvanzada
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(ClaseCompartida.listaDeEspera.ToString());
+            Prestamo[] imprimir = ClaseCompartida.listaDeEspera.imprimirCola();
+            
+            for (int i = 0; i < ClaseCompartida.listaDeEspera.obtenerCola(); i++)
+            {
+                MessageBox.Show(imprimir[i].toString());
+            }
+            
         }
     }
 }

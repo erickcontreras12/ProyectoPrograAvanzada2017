@@ -30,5 +30,12 @@ namespace ProyectoPrograAvanzada
             vim2.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Informes vim3 = new Informes();
+            vim3.Show();
+            this.Hide();
+        }
     }
 }

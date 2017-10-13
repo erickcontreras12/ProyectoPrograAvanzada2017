@@ -64,7 +64,6 @@ namespace ProyectoPrograAvanzada
                 if (prestamo.realizarPrestamo(prestamo.getIDGrupoUsuario(),prestamo.user.getID(),prestamo.getIDLey(),prestamo.reglamento.getIdregla(),2))
                 {
                     ClaseCompartida.arregloPrestamos.Insertar(prestamo);
-                    MessageBox.Show(ClaseCompartida.arregloPrestamos.Mostrar());
                 }
                
             }catch (Exception i)

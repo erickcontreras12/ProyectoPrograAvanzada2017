@@ -13,7 +13,10 @@ namespace ProyectoPrograAvanzada
         private nodo<T> fin;
         private int cola;
 
-        
+        public int obtenerCola()
+        {
+            return cola;
+        }
         public bool esta_vacia()
         {
             if (cola == 0)
@@ -56,20 +59,16 @@ namespace ProyectoPrograAvanzada
             }
         }
 
-        /**public T imprimirCola()
+        public T[] imprimirCola()
         {
-            int tmp = cola;
-            
+            T[] lista = new T[cola];
             nodo<T> temp = inicio;
-            while (cola > 0)
+            for (int i = 0; i < cola; i++)
             {
-                T resultado = inicio.dato;
-                return resultado;
-                obtener();
+                lista[i] = temp.dato;
+                temp = temp.siguiente;
             }
-            inicio = temp;
-            cola = tmp;
+            return lista;
         }
-   **/
 }
 }

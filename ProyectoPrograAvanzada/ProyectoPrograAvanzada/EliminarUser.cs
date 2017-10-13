@@ -23,5 +23,12 @@ namespace ProyectoPrograAvanzada
             MessageBox.Show(ClaseCompartida.arregloGrupos.Mostrar());
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SGrupoUsuario vim1 = new SGrupoUsuario();
+            vim1.Show();
+            this.Hide();
+        }
     }
 }
