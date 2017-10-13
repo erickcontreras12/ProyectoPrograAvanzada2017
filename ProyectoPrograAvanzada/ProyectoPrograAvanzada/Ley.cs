@@ -19,6 +19,8 @@ namespace ProyectoPrograAvanzada
         private Reglamentos[] data;
         private int tamanio = 0;
         private bool disponible = true;
+        public Ley siguiente;
+        private int posicion;
         private int inicial = 0;
         private bool parlamentario;
 
@@ -29,6 +31,14 @@ namespace ProyectoPrograAvanzada
         public int getLey()
         {
             return idLey;
+        }
+        public void setPosicion(int n)
+        {
+            posicion = n;
+        }
+        public int getPosicion()
+        {
+            return posicion;
         }
         /// <summary>
         /// determina si la ley esta disponible
