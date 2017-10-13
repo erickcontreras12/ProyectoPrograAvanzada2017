@@ -12,6 +12,7 @@ namespace ProyectoPrograAvanzada
         nodo<T> cima;
         public Pila<T> siguiente;
         public int posicion;
+        public int size;
         public void setPosicion(int pos)
         {
             this.posicion = pos;
@@ -40,6 +41,7 @@ namespace ProyectoPrograAvanzada
                 cima.siguiente = nuevo;
             }
             cima = nuevo;
+            size++;
         }//push insertar
 
 
@@ -66,7 +68,9 @@ namespace ProyectoPrograAvanzada
                 cima.siguiente.anterior = null;
                 cima.siguiente = null;
             }
+            size--;
             return d;
+            
         }//pop eliminar
 
         public void eliminarPila()

@@ -138,6 +138,7 @@
     <Compile Include="Ley.cs" />
     <Compile Include="Leyes.cs" />
     <Compile Include="LeyPrestada.cs" />
+    <Compile Include="ListaEspera.cs" />
     <Compile Include="LPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
