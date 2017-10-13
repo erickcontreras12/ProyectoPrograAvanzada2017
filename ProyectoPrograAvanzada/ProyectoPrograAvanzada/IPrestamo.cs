@@ -63,7 +63,18 @@ namespace ProyectoPrograAvanzada
                 prestamo.reglamento = prestamo.ley.Buscar(Convert.ToInt32(comboBox4.Text));
                 if (prestamo.realizarPrestamo(prestamo.getIDGrupoUsuario(),prestamo.user.getID(),prestamo.getIDLey(),prestamo.reglamento.getIdregla(),2))
                 {
-                    ClaseCompartida.arregloPrestamos.Insertar(prestamo);
+                    if (ClaseCompartida.arregloLeyes.Buscar(Convert.ToInt32(comboBox3.Text)).verCima().Buscar(Convert.ToInt32(comboBox4.Text)).getDisponible() != false)
+                    {
+                        ClaseCompartida.arregloPrestamos.Insertar(prestamo);
+                        ClaseCompartida.arregloLeyes.Buscar(Convert.ToInt32(comboBox3.Text)).verCima().Buscar(Convert.ToInt32(comboBox4.Text)).RegLaPrestada();
+
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Su solicitud no esta disponible, sera ingresado a una lista de espera");
+                    ClaseCompartida.listaEspera.Insertar(prestamo);
                 }
                
             }catch (Exception i)
