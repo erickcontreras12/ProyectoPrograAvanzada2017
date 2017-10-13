@@ -18,6 +18,7 @@ namespace ProyectoPrograAvanzada
         private String nombreRegla;
         public int posicion;
         public bool disponible;
+        public int numCopias = 5;
         /// <summary>
         /// ingresar el id del reglamento
         /// </summary>
@@ -33,6 +34,27 @@ namespace ProyectoPrograAvanzada
         public int getIdregla()
         {
             return this.idregla;
+        }
+        public void RegLaPrestada()
+        {
+            if (numCopias == 0)
+            {
+                disponible = false;
+            }
+            else
+            {
+                numCopias--;
+            }
+        }
+        public void ReglaDevuelta()
+        {
+            if (numCopias < 5)
+            {
+                disponible = true;
+                numCopias++;
+            }
+                
+            
         }
         public void setDisponible(bool poc)
         {
