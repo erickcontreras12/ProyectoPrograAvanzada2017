@@ -56,13 +56,7 @@ namespace ProyectoPrograAvanzada
                     size++;
                     MessageBox.Show("Ley Creada");
                 }
-                else
-                {
-                    if (nuevo.getLey() == Buscar(nuevo.getLey()).getLey())
-                    {
-                        MessageBox.Show("No puede ingresar dos veces el mismo Id");
-                    }
-                }
+                
             }
         }
 
