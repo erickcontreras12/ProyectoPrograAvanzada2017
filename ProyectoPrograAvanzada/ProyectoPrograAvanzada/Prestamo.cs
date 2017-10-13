@@ -17,6 +17,10 @@ namespace ProyectoPrograAvanzada
         private int posicion = 0;
 
         
+        public int getIdReglamento()
+        {
+            return reglamento.getIdregla();
+        }
         public void setPosicion(int n)
         {
             this.posicion = n;

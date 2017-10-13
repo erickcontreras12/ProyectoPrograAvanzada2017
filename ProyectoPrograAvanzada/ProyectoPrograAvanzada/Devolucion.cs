@@ -32,11 +32,28 @@ namespace ProyectoPrograAvanzada
                 Prestamo aux = temp.BuscarPosicion(i);
                 comboBox1.Items.Add(aux.getIdPrestamo());
             }
+            comboBox2.Items.Add("Ley");
+            comboBox2.Items.Add("Reglamento");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ClaseCompartida.arregloPrestamos.Eliminar(Convert.ToInt32(comboBox1.Text));
+            int idley = 0;
+            if (comboBox2.Text == "Ley")
+            {
+                 idley = ClaseCompartida.arregloPrestamos.Buscar(Convert.ToInt32(comboBox1.Text)).getIDLey();
+                ClaseCompartida.arregloLeyes.Buscar(idley).push(ClaseCompartida.prestamoLey.Buscar(idley));
+                ClaseCompartida.prestamoLey.Eliminar(idley);
+                ClaseCompartida.arregloPrestamos.Eliminar(Convert.ToInt32(comboBox1.Text));
+            }
+            else
+            {
+                int idregla = ClaseCompartida.arregloPrestamos.Buscar(Convert.ToInt32(comboBox1.Text)).getIdReglamento();
+                ClaseCompartida.arregloLeyes.Buscar(idley).verCima().Buscar(idregla).ReglaDevuelta();
+                ClaseCompartida.arregloPrestamos.Eliminar(Convert.ToInt32(comboBox1.Text));
+            }
+           
+
         }
     }
 }
