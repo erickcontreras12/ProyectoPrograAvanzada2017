@@ -39,7 +39,6 @@ C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\Proyecto
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CReglamento.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.CUsuario.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Datos.resources
-C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EGrupoUsuario.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.ELey.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EliminarGrupo.resources
 C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.EliminarUser.resources
@@ -64,3 +63,6 @@ C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\Proyecto
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.LPrestamo.resources
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Devolucion.resources
 C:\Users\Erick Contreras\Source\Repos\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Informes.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Devolucion.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.Informes.resources
+C:\Users\garya\Desktop\Repo2 Proyecto Progra\ProyectoPrograAvanzada2017\ProyectoPrograAvanzada\ProyectoPrograAvanzada\obj\Debug\ProyectoPrograAvanzada.LPrestamo.resources

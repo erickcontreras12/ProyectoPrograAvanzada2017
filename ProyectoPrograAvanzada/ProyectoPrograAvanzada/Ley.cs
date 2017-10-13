@@ -18,6 +18,7 @@ namespace ProyectoPrograAvanzada
         private String enunciado;
         private Reglamentos[] data;
         private int tamanio = 0;
+        private bool disponible = true;
         private int inicial = 0;
         private bool parlamentario;
 
@@ -28,6 +29,22 @@ namespace ProyectoPrograAvanzada
         public int getLey()
         {
             return idLey;
+        }
+        /// <summary>
+        /// determina si la ley esta disponible
+        /// </summary>
+        /// <param name="opc">verdadero o falso</param>
+        public void setDisponible(bool opc)
+        {
+            disponible = opc;
+        }
+        /// <summary>
+        /// se obtiene la disponibilidad de la ley
+        /// </summary>
+        /// <returns>falso o verdadero</returns>
+        public bool getDisponible()
+        {
+            return disponible;
         }
         /// <summary>
         /// Constructor
